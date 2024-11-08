@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-left {
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-left h2,
+.contact-right h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: black;
+  font-style: normal;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.social-icon a {
+  color: #333;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icon a:hover {
+  color: #000;
+}
+
+.contact-left iframe {
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact-right {
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-right p {
+  margin-bottom: 15px;
+  color: #666;
+  font-style: italic;
+  font-size: medium;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contact-left iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-left h2,
+  .contact-right h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .contact-left p,
+  .contact-right p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .social-icon {
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

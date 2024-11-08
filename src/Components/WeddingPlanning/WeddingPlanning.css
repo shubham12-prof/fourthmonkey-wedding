@@ -1,0 +1,53 @@
+   .wedding-planning {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-style: normal;
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+  }
+  
+  .service {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media (max-width: 1200px) {
+    .service-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-list {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
