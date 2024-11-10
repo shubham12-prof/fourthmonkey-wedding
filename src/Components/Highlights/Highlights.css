@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
 }
 
 .container {
@@ -24,6 +23,7 @@ body {
     margin-bottom: 20px;
     font-style: normal;
     color: white;
+    margin-top: 20px;
 }
 
 .image-box {

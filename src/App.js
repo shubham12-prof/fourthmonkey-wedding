@@ -1,18 +1,25 @@
 import React from 'react';
-import { Routes, Route,BrowserRouter } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from "./Components/Home/Home";
 import WeddingHome from "./Components/Weddings/WeddingHome";
-import "./App.css"
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import "./App.css";
+
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
       <header className="App-header">
-        <BrowserRouter >
+        {location.pathname !== "/" && <Header />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/WeddingHome" element={<WeddingHome />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
         </Routes>
-        </BrowserRouter>
+        <Footer />
       </header>
     </div>
   );

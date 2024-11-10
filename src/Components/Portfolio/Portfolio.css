@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .project-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-gallery {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+  }
+  
