@@ -5,19 +5,19 @@ import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
     'https://images.pexels.com/photos/752842/pexels-photo-752842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     'https://images.pexels.com/photos/931796/pexels-photo-931796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [images.length]);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, [images.length]);
   return (
     <nav className="hero-nav">
     {/* <div className='header' style={{ backgroundImage: `url(${images[currentImageIndex]})` }}> */}
