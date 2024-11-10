@@ -5,6 +5,7 @@ import WeddingHome from "./Components/Weddings/WeddingHome";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import ScrollToTop from "./Common/ScrollToTop"
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+       <ScrollToTop />
       <header className="App-header">
         {location.pathname !== "/" && <Header />}
         <Routes>
