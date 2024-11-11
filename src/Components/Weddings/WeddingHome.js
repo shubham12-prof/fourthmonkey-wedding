@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './WeddingHome.css';
+import Aos from "aos";
+import "aos/dist/aos.css"
 import Hightlights from '../Highlights/Highlights';
 import AboutUs from '../AboutUs/AboutUs';
 import WeddingPlanning from '../WeddingPlanning/WeddingPlanning';
@@ -23,14 +25,16 @@ const WeddingHome = () => {
   return (
     <div className="hero-section">
       <div className="hero-content" style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
+        <div data-aos="fade-left">
         <h2>We promise moon and stars, and we deliver them.</h2>
         <h1>Fourth_Munky</h1>
         <button>BOOK YOUR FREE CONSULTATION TODAY!</button>
+        </div>
       </div>
       <div className="vow-section">
         <h3>Our Vow to You</h3>
         <p>“Before you take your vows, let us make one to you.”</p>
-        <p>We, at Fourth Munky, take a vow that we will do whatever it takes to make your dream come true. We promise that we will always be on our toes to get you everything you need for your wedding. We promise that we will never break your trust. We love you and care for you and are ready to take you to your new journey of life.</p>
+        <p data-aos="zoom-in"> We, at Fourth Munky, take a vow that we will do whatever it takes to make your dream come true. We promise that we will always be on our toes to get you everything you need for your wedding. We promise that we will never break your trust. We love you and care for you and are ready to take you to your new journey of life.</p>
       </div>
       <AboutUs />
       <Hightlights />

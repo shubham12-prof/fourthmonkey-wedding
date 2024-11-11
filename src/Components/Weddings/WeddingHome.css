@@ -37,21 +37,8 @@ body {
 
 .hero-content h2, h1, button {
     font-weight: bold;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 2s ease-out forwards;
 }
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .hero-content h1 {
     font-size: 3rem;
@@ -91,19 +78,4 @@ body {
     font-style: italic;
 }
 
-.vow-section h3, p {
-    opacity: 0;
-    transform: translateY(100%);
-    animation: fadeInUp 2s ease-in-out forwards;
-}
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}

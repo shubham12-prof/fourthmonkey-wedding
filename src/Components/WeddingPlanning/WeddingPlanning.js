@@ -5,7 +5,7 @@ const WeddingPlanning = () => {
   return (
     <section className="wedding-planning">
       <h2>Complete Wedding Planning</h2>
-      <div className="service-list">
+      <div data-aos="fade-up" className="service-list">
         <div className="service">
           <h3>Conceptualizing and Storytelling</h3>
           <p>We create unique wedding stories and experiences tailored to your vision.</p>

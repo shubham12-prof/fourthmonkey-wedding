@@ -32,7 +32,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="project-gallery">
+    <div data-aos="zoom-in" className="project-gallery">
       {projects.map((project, index) => (
         <ProjectCard
           key={index}

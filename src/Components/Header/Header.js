@@ -11,7 +11,9 @@ const Header = () => {
     'https://images.pexels.com/photos/931796/pexels-photo-931796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   ];
-
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Close menu when a link is clicked
+  };
   // useEffect(() => {
   //   const interval = setInterval(() => {
   //     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -25,11 +27,11 @@ const Header = () => {
         <i className="fas fa-bars"></i>
       </div>
       <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-        <li>About Us</li>
-        <li><Link to="/portfolio" className='link-style'>
-          Portfolio
+        <li>ABOUT US</li>
+        <li><Link to="/portfolio" onClick={handleLinkClick} className='link-style'>
+          PORTFOLIO
         </Link></li>
-        <li>Blog</li>
+        <li>BLOG</li>
       </ul>
       <div className="social-icons">
         <i className="fab fa-instagram"></i>

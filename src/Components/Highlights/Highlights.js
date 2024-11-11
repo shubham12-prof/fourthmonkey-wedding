@@ -17,7 +17,7 @@ function ImageBox() {
           Take time to see our previous weddings to understand …………………………
         </h3> */}
       <h2 className="header">HIGHLIGHTS</h2>
-      <div className="image-box">
+      <div data-aos="zoom-in"  className="image-box">
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Image ${index + 1}`} className="image" />
         ))}

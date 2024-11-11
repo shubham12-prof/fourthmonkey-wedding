@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import React ,{ useEffect } from 'react';
+import { Routes, Route, useLocation} from 'react-router-dom';
 import Home from "./Components/Home/Home";
 import WeddingHome from "./Components/Weddings/WeddingHome";
 import Portfolio from "./Components/Portfolio/Portfolio";
@@ -7,9 +7,18 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import ScrollToTop from "./Common/ScrollToTop"
 import "./App.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
   const location = useLocation();
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true, 
+    });
+  }, []);
 
   return (
     <div className="App">
