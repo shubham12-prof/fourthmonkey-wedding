@@ -3,6 +3,7 @@ import './Card.css';
 
 const ProjectCard = ({ title, description, imageUrl }) => {
   return (
+   <>
     <div className="card">
       <div className="card-image" style={{ backgroundImage: `url(${imageUrl})` }}></div>
       <div className="card-content">
@@ -11,6 +12,7 @@ const ProjectCard = ({ title, description, imageUrl }) => {
         <a href="#" className="view-project">View Project</a>
       </div>
     </div>
+</>
   );
 };
 

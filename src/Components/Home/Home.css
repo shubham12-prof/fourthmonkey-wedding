@@ -97,3 +97,13 @@ body {
         font-size: 18px;
     }
 }
+
+@media (min-width: 268px) {
+    .button-container {
+        height: 300px;
+    }
+    
+    .full-width-button {
+        font-size: 18px;
+    }
+}

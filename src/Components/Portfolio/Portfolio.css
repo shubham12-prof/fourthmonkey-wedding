@@ -5,15 +5,78 @@ body {
     color: #fff;
   }
   
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 430px;
+    background-image: url('https://img.freepik.com/free-photo/newlyweds-silhouette-near-high-window-staircase-old-building_8353-10450.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header-text {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+
   .project-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    gap: 20px;
+    width: 100%;
     padding: 20px;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 8rem;
   }
+
+  .selected-image {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .project-gallery > div {
+    cursor: pointer;
+  }
+  
+  .project-gallery > div:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  
   
   @media (max-width: 768px) {
     .project-gallery {
