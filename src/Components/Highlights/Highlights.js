@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Highlights.css"
+import { Link } from 'react-router-dom';
 const images = [
   'https://images.pexels.com/photos/752842/pexels-photo-752842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   'https://images.pexels.com/photos/931796/pexels-photo-931796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -7,10 +8,6 @@ const images = [
 ];
 
 function ImageBox() {
-  const handleViewAllProjects = () => {
-    alert("View All Projects clicked!");
-  };
-
   return (
     <div className="container">
         {/* <h3>
@@ -22,7 +19,7 @@ function ImageBox() {
           <img key={index} src={src} alt={`Image ${index + 1}`} className="image" />
         ))}
       </div>
-      <button className="view-all-button" onClick={handleViewAllProjects}>VIEW ALL PROJECTS</button>
+      <button className="view-all-button"><Link to = "/portfolio"> VIEW ALL PROJECTS</Link></button>
     </div>
   );
 }

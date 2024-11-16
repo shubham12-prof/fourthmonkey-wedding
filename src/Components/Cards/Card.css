@@ -24,7 +24,7 @@
 
 .card-content h2 {
   font-size: 1rem;
-  margin: 0;
+  /* margin-top: 5rem; */
   color: black;
   font-family: serif;
 }

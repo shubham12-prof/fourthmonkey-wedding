@@ -15,8 +15,8 @@ function Contact() {
           <a href="#"><i className="fab fa-instagram"></i></a>
           <a href="#"><i className="fab fa-whatsapp"></i></a>
         </div>
-        {/* <h3>FIND US</h3>
-        <iframe
+        {/* <h3>FIND US</h3> */}
+        {/* <iframe
           title="Google Maps"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12..."
           width="100%"

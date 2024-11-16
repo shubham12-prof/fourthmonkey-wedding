@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
@@ -16,7 +17,7 @@ const AboutUs = () => {
           logistics, to on-ground management, and hospitality, entertainment, to
           the final vow; we get everything sorted. And we assure class and luxury
           in our services.</p>
-        <button className="know-more-button">Know More</button>
+        <button className="know-more-button"> <Link to="/AboutUs">Know More</Link></button>
       </div>
     </div>
   );

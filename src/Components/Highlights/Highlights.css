@@ -35,28 +35,37 @@ body {
 
 .image {
     width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+    object-fit: cover; 
     max-width: 300px;
     height: 400px;
-    object-fit: cover;
-
 }
+  
+  .image:hover{
+    transform: scale(1.1);
+  }
 
 .view-all-button {
     margin-top: 20px;
     padding: 12px 24px;
     font-size: 14px;
     font-weight: bold;
-    color: #f1f1f1;
-    background-color: #6c757d;
     border: none;
     border-radius: 5px;
+    background-color: #333;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .view-all-button:hover {
-    background-color: #5a6268;
+    background-color: #555;
+}
+
+.view-all-button a {
+    color:white ;
+    
 }
 
 @media (max-width: 768px) {
