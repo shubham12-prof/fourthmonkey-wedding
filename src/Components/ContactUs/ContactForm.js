@@ -11,9 +11,9 @@ function Contact() {
         <p>📞 +91 7247889013</p>
         <p>📧 weddings@fourthmunky.com</p>
         <div className="social-icon">
-          <a href="#"><i className="fab fa-facebook-f"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
-          <a href="#"><i className="fab fa-whatsapp"></i></a>
+          <a href="/"><i className="fab fa-facebook-f"></i></a>
+          <a href="/"><i className="fab fa-instagram"></i></a>
+          <a href="/"><i className="fab fa-whatsapp"></i></a>
         </div>
         {/* <h3>FIND US</h3> */}
         {/* <iframe

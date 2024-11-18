@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
-import aboutImage from '../AboutPage/TeamSection/TeamSection';
+// import aboutImage from '../AboutPage/TeamSection/TeamSection';
 import TeamSection from './TeamSection/TeamSection';
 
 const AboutPage = () => {
