@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/fourthmonkey-wedding/static/css/main.d75c2abf.css",
-    "main.js": "/fourthmonkey-wedding/static/js/main.ec3c47f2.js",
+    "main.css": "/fourthmonkey-wedding/static/css/main.39d4446f.css",
+    "main.js": "/fourthmonkey-wedding/static/js/main.e142fc78.js",
+    "static/media/image3.jpg": "/fourthmonkey-wedding/static/media/image3.ff06428e032a9ff0c1c6.jpg",
     "static/media/fa-solid-900.ttf": "/fourthmonkey-wedding/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/fourthmonkey-wedding/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/images.svg": "/fourthmonkey-wedding/static/media/images.5820903fcacba963c5633d7bed44e456.svg",
     "static/media/fa-solid-900.woff2": "/fourthmonkey-wedding/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/image2.jpg": "/fourthmonkey-wedding/static/media/image2.1c9071457ff6283dfa61.jpg",
     "static/media/fa-brands-400.woff2": "/fourthmonkey-wedding/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/fa-regular-400.ttf": "/fourthmonkey-wedding/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/image1.jpg": "/fourthmonkey-wedding/static/media/image1.2cbb51a6fe45ea56e222.jpg",
     "static/media/fa-regular-400.woff2": "/fourthmonkey-wedding/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/fa-v4compatibility.ttf": "/fourthmonkey-wedding/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/fourthmonkey-wedding/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/fourthmonkey-wedding/index.html",
-    "main.d75c2abf.css.map": "/fourthmonkey-wedding/static/css/main.d75c2abf.css.map",
-    "main.ec3c47f2.js.map": "/fourthmonkey-wedding/static/js/main.ec3c47f2.js.map"
+    "main.39d4446f.css.map": "/fourthmonkey-wedding/static/css/main.39d4446f.css.map",
+    "main.e142fc78.js.map": "/fourthmonkey-wedding/static/js/main.e142fc78.js.map"
   },
   "entrypoints": [
-    "static/css/main.d75c2abf.css",
-    "static/js/main.ec3c47f2.js"
+    "static/css/main.39d4446f.css",
+    "static/js/main.e142fc78.js"
   ]
 }
