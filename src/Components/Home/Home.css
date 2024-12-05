@@ -56,36 +56,40 @@ body {
 
 .full-width-button {
     width: 100%;
-    max-width: 300px;
-    height: 300px;
+    max-width: 400px;
+    height: 250px;
     display: flex;
     align-items: center;
-    padding: 35px;
-    font-size: 25px;
-    background-color: rgba(26, 27, 27, 0.8);
-    color: white;
+    /* padding: 35px; */
+    font-size: 25px !important;
+    /* background-color: rgba(26, 27, 27, 0.8); */
+    /* background-color: black; */
+    color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
+    font-weight: 700;
     transition: background-color 0.3s ease;
     box-shadow: 0px 16px 39px rgba(441, 126, 39, 0.3);
 }
 
 .full-width-button:hover {
-    background: linear-gradient(135deg, #ee0979, #ff6a00);
-    border: 2px solid #ff6a00;
+    /* background: linear-gradient(135deg, #ee0979, #ff6a00); */
+    /* border: 2px solid #ff6a00; */
     transform: translateY(-3px);
-    box-shadow: 0px 8px 20px rgba(255, 126, 95, 0.4);
+    color: rgb(150, 150, 237);
+    /* box-shadow: 0px 8px 20px rgba(255, 126, 95, 0.4); */
 }
 
 .button-header {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-style: normal;
     border: 1px solid #b7b7b7;
     padding: 0.5rem;
-    background-color: #111;
+    font-size:x-large;
+    /* background-color: #111; */
 }
 
 @media (min-width: 768px) {
