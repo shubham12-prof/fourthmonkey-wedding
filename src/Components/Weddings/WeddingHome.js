@@ -26,15 +26,15 @@ const WeddingHome = () => {
     <div className="hero-section">
       <div className="hero-content" style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div data-aos="fade-left">
-        <h2>We promise moon and stars, and we deliver them.</h2>
-        <h1>Fourth_Munky</h1>
-        <a 
-            href="https://wa.me/7906304629?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20free%20consultation%20for%20wedding%20planning." 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <h2>We promise moon and stars, and we deliver them.</h2>
+          <h1>Fourth_Munky</h1>
+          <a
+            href="https://wa.me/7906304629?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20free%20consultation%20for%20wedding%20planning."
+            target="_blank"
+            rel="noopener noreferrer"
             className="whatsapp-button"
           >
-        BOOK YOUR FREE CONSULTATION TODAY!</a>
+            BOOK YOUR FREE CONSULTATION TODAY!</a>
         </div>
       </div>
       <div className="vow-section">

@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Home.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Home.css";
 import image1 from "../../Images/image1.jpg";
 import image2 from "../../Images/image2.jpg";
-import image3 from "../../Images/image3.jpg";
+import backgroundVideo from "../../Images/background.mp4";
 
 const ButtonComponent = () => {
-  const defaultBackground = image3;
   const [backgroundImage, setBackgroundImage] = useState("");
 
   const handleMouseEnter = (image) => {
@@ -14,34 +13,51 @@ const ButtonComponent = () => {
   };
 
   const handleMouseLeave = () => {
-    setBackgroundImage(defaultBackground);
+    setBackgroundImage("");
   };
+
   return (
-    <div className="line-background-container">
-      {/* <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div> */}
-      <div className="content"
+    <div >
+      <video
+        autoPlay
+        loop
+        muted
+        className="background-video"
         style={{
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          transition: "background-image 0.5s ease-in-out",
-        }}>
+          display: backgroundImage ? "none" : "block",
+        }}
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {backgroundImage && (
+        <div
+          className="hover-background"
+          style={{
+            backgroundImage: `url(${backgroundImage})`,
+          }}
+        ></div>
+      )}
+      <div className="content">
         <p className="button-header">FOURTH MUNKY ENTERTAINMENT</p>
         <div className="button-container">
-          <Link data-aos="fade-right" to="/WeddingHome"
+          <Link
+            data-aos="fade-right"
+            to="/WeddingHome"
             className="full-width-button"
-            onMouseEnter={() => handleMouseEnter(image1)} onMouseLeave={handleMouseLeave}>
+            onMouseEnter={() => handleMouseEnter(image1)}
+            onMouseLeave={handleMouseLeave}
+          >
             DISCOVER WEDDINGS BY FOURTH MUNKY
           </Link>
-          <Link data-aos="fade-left" to="/EntertainmentHome" className="full-width-button" onMouseEnter={() => handleMouseEnter(image2)} onMouseLeave={handleMouseLeave}>
+          <Link
+            data-aos="fade-left"
+            to="/EntertainmentHome"
+            className="full-width-button"
+            onMouseEnter={() => handleMouseEnter(image2)}
+            onMouseLeave={handleMouseLeave}
+          >
             EXPLORE FOURTH MUNKY ENTERTAINMENT
           </Link>
         </div>
