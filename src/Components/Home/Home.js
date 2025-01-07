@@ -17,7 +17,7 @@ const ButtonComponent = () => {
   };
 
   return (
-    <div >
+    <div className="page-container">
       <video
         autoPlay
         loop
@@ -39,6 +39,7 @@ const ButtonComponent = () => {
           }}
         ></div>
       )}
+
       <div className="content">
         <p className="button-header">FOURTH MUNKY ENTERTAINMENT</p>
         <div className="button-container">
@@ -62,6 +63,10 @@ const ButtonComponent = () => {
           </Link>
         </div>
       </div>
+
+      <footer className="footer">
+        <p>© 2025 Fourth Munky Entertainment. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
