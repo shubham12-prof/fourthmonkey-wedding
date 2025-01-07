@@ -18,55 +18,52 @@ const ButtonComponent = () => {
 
   return (
     <div className="page-container">
-      <video
-        autoPlay
-        loop
-        muted
-        className="background-video"
-        style={{
-          display: backgroundImage ? "none" : "block",
-        }}
-      >
-        <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {backgroundImage && (
-        <div
-          className="hover-background"
+      <div className="video-container">
+        <video
+          autoPlay
+          loop
+          muted
+          className="background-video"
           style={{
-            backgroundImage: `url(${backgroundImage})`,
+            display: backgroundImage ? "none" : "block",
           }}
-        ></div>
-      )}
+        >
+          <source src={backgroundVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {backgroundImage && (
+          <div
+            className="hover-background"
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+            }}
+          ></div>
+        )}
 
-      <div className="content">
-        <p className="button-header">FOURTH MUNKY ENTERTAINMENT</p>
-        <div className="button-container">
-          <Link
-            data-aos="fade-right"
-            to="/WeddingHome"
-            className="full-width-button"
-            onMouseEnter={() => handleMouseEnter(image1)}
-            onMouseLeave={handleMouseLeave}
-          >
-            DISCOVER WEDDINGS BY FOURTH MUNKY
-          </Link>
-          <Link
-            data-aos="fade-left"
-            to="/EntertainmentHome"
-            className="full-width-button"
-            onMouseEnter={() => handleMouseEnter(image2)}
-            onMouseLeave={handleMouseLeave}
-          >
-            EXPLORE FOURTH MUNKY ENTERTAINMENT
-          </Link>
+        <div className="video-overlay">
+          <p className="button-header">FOURTH MUNKY ENTERTAINMENT</p>
+          <div className="button-container">
+            <Link
+              data-aos="fade-right"
+              to="/WeddingHome"
+              className="full-width-button"
+              onMouseEnter={() => handleMouseEnter(image1)}
+              onMouseLeave={handleMouseLeave}
+            >
+              DISCOVER WEDDINGS BY FOURTH MUNKY
+            </Link>
+            <Link
+              data-aos="fade-left"
+              to="/EntertainmentHome"
+              className="full-width-button"
+              onMouseEnter={() => handleMouseEnter(image2)}
+              onMouseLeave={handleMouseLeave}
+            >
+              EXPLORE FOURTH MUNKY ENTERTAINMENT
+            </Link>
+          </div>
         </div>
       </div>
-
-      <footer className="footer">
-        <p>© 2025 Fourth Munky Entertainment. All rights reserved.</p>
-      </footer>
     </div>
   );
 };
