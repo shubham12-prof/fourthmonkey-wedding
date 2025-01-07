@@ -84,6 +84,10 @@ body {
     .full-width-button {
         font-size: 18px;
     }
+
+    .button-header {
+        font-size: 38px;
+    }
 }
 
 @media (min-width: 268px) {
@@ -93,5 +97,9 @@ body {
 
     .full-width-button {
         font-size: 18px;
+    }
+
+    .button-header {
+        font-size: 38px;
     }
 }
