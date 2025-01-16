@@ -14,7 +14,7 @@
 }
 
 .about-image {
-  width: 100%;
+  width: 25%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -26,14 +26,14 @@
 }
 
 .text-section h2 {
-  font-size: 24px;
+  font-size: clamp(20px, 2vw, 28px);
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
 
 .text-section p {
-  font-size: 16px;
+  font-size: clamp(14px, 1.5vw, 18px);
   color: #555;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -44,20 +44,39 @@
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: clamp(12px, 1vw, 16px);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 4px;
 }
 
 .know-more-button:hover {
   background-color: #887676;
 }
 
-
 .know-more-button a {
   color: #ffffff;
+  text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+  .about-us-container {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .text-section h2 {
+    font-size: clamp(18px, 2vw, 24px);
+  }
+
+  .text-section p {
+    font-size: clamp(13px, 1.5vw, 16px);
+  }
+
+  .know-more-button {
+    padding: 8px 16px;
+  }
+}
 
 @media (max-width: 768px) {
   .about-us-container {
@@ -65,20 +84,40 @@
     align-items: center;
   }
 
-  .image-section, .text-section {
+  .image-section,
+  .text-section {
     max-width: 100%;
   }
 
   .text-section h2 {
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
   }
 
   .text-section p {
-    font-size: 14px;
+    font-size: clamp(12px, 2vw, 14px);
   }
 
   .know-more-button {
-    padding: 8px 16px;
-    font-size: 13px;
+    font-size: clamp(12px, 2vw, 14px);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .text-section h2 {
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
+  .text-section p {
+    font-size: clamp(12px, 3vw, 14px);
+  }
+
+  .know-more-button {
+    padding: 6px 12px;
+    font-size: clamp(11px, 3vw, 13px);
   }
 }

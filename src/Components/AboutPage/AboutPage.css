@@ -38,21 +38,13 @@ body {
   gap: 20px;
   background-color: #fffefe;
   padding: 30px;
-  /* border-radius: 8px; */
-  max-width: 1200px;
   width: 100%;
   margin-top: 0.5rem;
 }
 
 .about-image img {
-  width: 100%;
-  max-width: 300px;
   border-radius: 8px;
 }
-
-/* .about-text {
-  max-width: 600px;
-} */
 
 .about-text h2 {
   color: #000000;
@@ -62,9 +54,9 @@ body {
 }
 
 .about-text p {
-  font-size: 1em;
+  font-size: 1.7em;
   color: #000000;
-  /* line-height: 1.5; */
+  line-height: 1.5;
   font-style: oblique;
   height: 230px;
   text-align: left;
@@ -77,6 +69,6 @@ body {
   }
 
   .about-image img {
-    max-width: 20%;
+    max-width: 15%;
   }
 }
