@@ -1,8 +1,8 @@
 .card {
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
+  /* width: 300px; */
   flex-direction: column;
   transition: transform 0.3s ease;
 }
@@ -12,7 +12,7 @@
 }
 
 .card-image {
-  height: 250px;
+  height: 350px;
   background-size: cover;
   background-position: center;
 }
@@ -24,7 +24,6 @@
 
 .card-content h2 {
   font-size: 1rem;
-  /* margin-top: 5rem; */
   color: black;
   font-family: serif;
 }
@@ -37,9 +36,7 @@
 
 .view-project {
   color: #000;
-  /* font-weight: bold; */
   font-size: 1rem;
-  border: 1px solid black;
   text-decoration: none;
   padding: 4px;
 }

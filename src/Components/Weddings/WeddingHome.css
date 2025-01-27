@@ -44,24 +44,25 @@
     padding: 0.8rem 2rem;
     font-size: 1rem;
     border: none;
-    background-color: #333;
+    background-color: #999e4d;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .hero-content button:hover {
-    background-color: #555;
+    background-color: #fafafa;
 }
 
 .hero-content a:hover {
-    background-color: #887676;
+    background-color: #000000;
 }
 
 .vow-section {
     text-align: center;
     color: #676767;
-    padding: 1rem 2rem;
+    padding: 1rem 10rem;
     background-color: white;
 }
 

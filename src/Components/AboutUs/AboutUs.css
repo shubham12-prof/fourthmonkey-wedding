@@ -2,19 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 1rem 5%;
   gap: 40px;
   flex-wrap: wrap;
   background-color: white;
+  box-sizing: border-box;
 }
 
 .image-section {
   flex: 1;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .about-image {
-  width: 25%;
+  width: 100%;
+  max-width: 400px; 
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -22,18 +24,18 @@
 
 .text-section {
   flex: 1;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .text-section h2 {
-  font-size: clamp(20px, 2vw, 28px);
+  font-size: clamp(18px, 3vw, 28px); 
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
 
 .text-section p {
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(14px, 2vw, 18px); 
   color: #555;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -44,7 +46,7 @@
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size: clamp(12px, 1vw, 16px);
+  font-size: clamp(12px, 1.5vw, 16px);
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 4px;
@@ -61,16 +63,16 @@
 
 @media (max-width: 1024px) {
   .about-us-container {
-    padding: 30px;
+    padding: 1rem 5%;
     gap: 30px;
   }
 
   .text-section h2 {
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: clamp(18px, 2.5vw, 24px);
   }
 
   .text-section p {
-    font-size: clamp(13px, 1.5vw, 16px);
+    font-size: clamp(13px, 2vw, 16px);
   }
 
   .know-more-button {
@@ -86,7 +88,7 @@
 
   .image-section,
   .text-section {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .text-section h2 {
@@ -104,7 +106,7 @@
 
 @media (max-width: 480px) {
   .about-us-container {
-    padding: 20px;
+    padding: 0px 3%;
     gap: 20px;
   }
 

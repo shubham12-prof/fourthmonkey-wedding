@@ -1,65 +1,77 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import image1 from "../../Images/image1.jpg";
-import image2 from "../../Images/image2.jpg";
-import backgroundVideo from "../../Images/background.mp4";
+import image1 from "../../Images/Wedding.jpg";
+import image2 from "../../Images/Entertainment.jpg";
+import backgroundImage from "../../Images/Home.jpg";
+import Websvg from "../../Images/fourth-munky-weddings-floral.svg";
 
 const ButtonComponent = () => {
-  const [backgroundImage, setBackgroundImage] = useState("");
+  const [hoverBackgroundImage, setHoverBackgroundImage] = useState("");
 
   const handleMouseEnter = (image) => {
-    setBackgroundImage(image);
+    setHoverBackgroundImage(image);
   };
 
   const handleMouseLeave = () => {
-    setBackgroundImage("");
+    setHoverBackgroundImage("");
   };
 
   return (
     <div className="page-container">
-      <div className="video-container">
-        <video
-          autoPlay
-          loop
-          muted
-          className="background-video"
-          style={{
-            display: backgroundImage ? "none" : "block",
-          }}
-        >
-          <source src={backgroundVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {backgroundImage && (
-          <div
-            className="hover-background"
-            style={{
-              backgroundImage: `url(${backgroundImage})`,
-            }}
-          ></div>
-        )}
-
-        <div className="video-overlay">
-          <p className="button-header">FOURTH MUNKY ENTERTAINMENT</p>
+      <div className="svg-icon-container-home">
+        <img src={Websvg} alt="Icon" className="svg-icon-home" />
+      </div>
+      <div
+        className="background-container"
+        style={{
+          backgroundImage: hoverBackgroundImage
+            ? `url(${hoverBackgroundImage})`
+            : `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="overlay">
+          {/* <p className="button-header">FOURTH MUNKY ENTERTAINMENT</p> */}
           <div className="button-container">
             <Link
               data-aos="fade-right"
               to="/WeddingHome"
+              style={{ display: "flex", flexDirection: "column" }}
               className="full-width-button"
               onMouseEnter={() => handleMouseEnter(image1)}
               onMouseLeave={handleMouseLeave}
             >
-              DISCOVER WEDDINGS BY FOURTH MUNKY
+              <span
+                style={{
+                  fontSize: "18px",
+                  marginBottom: "1rem",
+                  fontStyle: "oblique",
+                }}
+              >
+                DISCOVER
+              </span>
+              WEDDINGS BY FOURTH MUNKY
             </Link>
             <Link
               data-aos="fade-left"
               to="/EntertainmentHome"
               className="full-width-button"
+              style={{ display: "flex", flexDirection: "column" }}
               onMouseEnter={() => handleMouseEnter(image2)}
               onMouseLeave={handleMouseLeave}
             >
-              EXPLORE FOURTH MUNKY ENTERTAINMENT
+              <span
+                style={{
+                  fontSize: "18px",
+                  marginBottom: "1rem",
+                  fontStyle: "oblique",
+                }}
+              >
+                EXPLORE
+              </span>
+              FOURTH MUNKY ENTERTAINMENT
             </Link>
           </div>
         </div>
