@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import image1 from "../../Images/Wedding.jpg";
-import image2 from "../../Images/Entertainment.jpg";
 import backgroundImage from "../../Images/Home.jpg";
 import Websvg from "../../Images/fourth-munky-weddings-floral.svg";
 
