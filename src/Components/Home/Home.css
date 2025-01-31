@@ -1,16 +1,11 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
+.preload-images {
+    position: absolute; 
+    width: 0; 
+    height: 0;
+    overflow: hidden; 
+    background-image: url('../../Images/Wedding.jpg'), url('../../Images/Entertainment.jpg');
+    visibility: hidden;
+  }
 .page-container {
     display: flex;
     flex-direction: column;
@@ -38,7 +33,6 @@ body {
     /* max-width: 800px; */
     padding: 20px;
     border-radius: 10px;
-    /* background: rgba(0, 0, 0, 0.6); Semi-transparent background for readability */
 }
 
 .button-header {
@@ -61,18 +55,11 @@ body {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
-    /* font-weight: bold; */
     text-align: center;
-    /* background: rgba(255, 255, 255, 0.2); */
+
     border-radius: 8px;
     transition: transform 0.3s ease, background 0.3s ease;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
 }
-
-/* .full-width-button:hover {
-    transform: translateY(-3px);
-    background: rgba(255, 255, 255, 0.3);
-} */
 
 .svg-icon-container-home {
     position: absolute;
@@ -84,12 +71,11 @@ body {
     justify-content: center;
     width: 300px;
     height: 100px;
-    /* background-color: aqua; */
 }
 
 .svg-icon-home {
-    width: 224px;
-    height: 224px;
+    width: 100%;
+    height: 100%;
 }
 
 

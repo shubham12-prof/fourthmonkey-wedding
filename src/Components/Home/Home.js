@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import image1 from "../../Images/Wedding.jpg";
@@ -8,6 +8,20 @@ import Websvg from "../../Images/fourth-munky-weddings-floral.svg";
 
 const ButtonComponent = () => {
   const [hoverBackgroundImage, setHoverBackgroundImage] = useState("");
+
+  // Preload images and SVG icon
+  useEffect(() => {
+    const images = [
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg",
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg",
+      backgroundImage,
+      Websvg,
+    ];
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   const handleMouseEnter = (image) => {
     setHoverBackgroundImage(image);
@@ -20,7 +34,11 @@ const ButtonComponent = () => {
   return (
     <div className="page-container">
       <div className="svg-icon-container-home">
-        <img src={Websvg} alt="Icon" className="svg-icon-home" />
+        <img
+          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_300,h_80/v1738178375/fn6ioy0xhovof24vsvrt.png"
+          alt="Icon"
+          // className="svg-icon-home"
+        />
       </div>
       <div
         className="background-container"
@@ -33,14 +51,17 @@ const ButtonComponent = () => {
         }}
       >
         <div className="overlay">
-          {/* <p className="button-header">FOURTH MUNKY ENTERTAINMENT</p> */}
           <div className="button-container">
             <Link
               data-aos="fade-right"
               to="/WeddingHome"
               style={{ display: "flex", flexDirection: "column" }}
               className="full-width-button"
-              onMouseEnter={() => handleMouseEnter(image1)}
+              onMouseEnter={() =>
+                handleMouseEnter(
+                  "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg"
+                )
+              }
               onMouseLeave={handleMouseLeave}
             >
               <span
@@ -59,7 +80,11 @@ const ButtonComponent = () => {
               to="/EntertainmentHome"
               className="full-width-button"
               style={{ display: "flex", flexDirection: "column" }}
-              onMouseEnter={() => handleMouseEnter(image2)}
+              onMouseEnter={() =>
+                handleMouseEnter(
+                  "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg"
+                )
+              }
               onMouseLeave={handleMouseLeave}
             >
               <span

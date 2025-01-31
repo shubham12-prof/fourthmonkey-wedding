@@ -1,38 +1,37 @@
 .card {
-  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  /* width: 300px; */
   flex-direction: column;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }
 
 .card-image {
-  height: 350px;
-  background-size: cover;
-  background-position: center;
+  width: 350px;
+  height: 400px;
+  object-fit: cover; 
 }
 
 .card-content {
-  padding: 20px;
+  padding: 15px;
+  background-color: #fff;
+  color: #333;
   text-align: center;
+  flex-grow: 1; 
 }
 
 .card-content h2 {
-  font-size: 1rem;
-  color: black;
-  font-family: serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .card-content p {
   font-size: 1rem;
   color: #555;
-  margin: 15px 0;
 }
+
 
 .view-project {
   color: #000;

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./Header.css";
-import MySvg from "../../Common/Icons/images.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,21 +10,35 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMenuOpen && !event.target.closest(".nav-links, .hamburger-icon")) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isMenuOpen]);
+
   return (
     <nav className="hero-nav">
       <div
         className="hamburger-icon"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
+        role="button"
+        aria-label="Toggle menu"
+        aria-expanded={isMenuOpen}
       >
         <i className="fas fa-bars"></i>
       </div>
       <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <li>
+        <li key="about-us">
           <Link onClick={handleLinkClick} className="link-style" to="/AboutUs">
             ABOUT US
           </Link>
         </li>
-        <li>
+        <li key="portfolio">
           <Link
             to="/portfolio"
             onClick={handleLinkClick}
@@ -34,19 +47,26 @@ const Header = () => {
             PORTFOLIO
           </Link>
         </li>
-        <li>
-          <Link
-            to="/portfolio"
-            onClick={handleLinkClick}
-            className="link-style"
-          >
+        <li key="blog">
+          <Link to="/blog" onClick={handleLinkClick} className="link-style">
             BLOG
           </Link>
         </li>
       </ul>
-      <div className="svg-icon-header">
+      <div>
         <Link to="WeddingHome">
-          <img src={MySvg} alt="My SVG Icon" />
+          <picture>
+            <source
+              srcSet="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png"
+              type="image/webp"
+            />
+            <img
+              className="svg-icon-header"
+              src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/f_auto,q_auto,w_80,h_80/p9x32n7xaw3pkt7ufdff.png"
+              alt="My SVG Icon"
+              loading="eager"
+            />
+          </picture>
         </Link>
       </div>
       <div className="social-icons-header">

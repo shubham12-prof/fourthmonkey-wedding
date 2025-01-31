@@ -1,33 +1,35 @@
 body {
-  font-family: "Edu AU VIC WA NT Pre", cursive;
-  font-optical-sizing: auto;
-  font-weight: lighter;
+  /* font-family: "Edu AU VIC WA NT Pre", cursive; */
+  /* font-optical-sizing: auto; */
+  /* font-weight: lighter; */
   font-size: small;
 }
 
 .about-container {
-  background-color: white;
+  /* background-color: white; */
+  z-index: 31;
 }
 
 .about-background {
-  width: 100%;
-  height: 430px;
-  background-image: url('https://img.freepik.com/free-photo/newlyweds-silhouette-near-high-window-staircase-old-building_8353-10450.jpg?semt=ais_hybrid');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  width: 99%;
+  height: 200px; 
+  z-index: 31;
 }
-
+.about-background-image{
+  /* position: relative;
+  top: 0;
+  left: 0; */
+  width: 100vw;
+  height: 45vh;
+  object-fit: cover;
+}
 .about-background-text {
   color: white;
   font-size: 22px;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
   font-style: normal;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 8px;
 }
 
@@ -41,24 +43,28 @@ body {
   width: 100%;
   margin-top: 0.5rem;
 }
-
+.about-svg-image{
+  width: 350px;
+  position: absolute;
+  }
 .about-image img {
   border-radius: 8px;
+  position: absolute;
+  top: 16rem;
 }
 
 .about-text h2 {
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 10px;
   font-size: 2em;
-
 }
 
 .about-text p {
-  font-size: 1.7em;
-  color: #000000;
+  font-size: 1.5em;
+  color: #ffffff;
   line-height: 1.5;
-  font-style: oblique;
-  height: 230px;
+  /* font-style: oblique; */
+  height: 123px;
   text-align: left;
 }
 

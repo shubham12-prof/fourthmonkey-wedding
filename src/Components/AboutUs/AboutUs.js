@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import { Link } from "react-router-dom";
-
+import AboutPage from "../../assets/aboutcover.JPG";
 const AboutUs = () => {
   return (
     <div className="about-us-container">
@@ -9,8 +9,8 @@ const AboutUs = () => {
         <img
           className="about-image"
           data-aos="fade-right"
-          src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="Studio Kintsugi"
+          src={AboutPage}
+          alt="about-image"
         />
       </div>
       <div className="text-section">

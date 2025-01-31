@@ -5,11 +5,14 @@ import Hightlights from "../Highlights/Highlights";
 import AboutUs from "../AboutUs/AboutUs";
 import WeddingPlanning from "../WeddingPlanning/WeddingPlanning";
 import Contact from "../ContactUs/ContactForm";
-import WeddingCover from "../../assets/weddingCover.jpg";
+import WeddingCover from "../../assets/weddingCover.jpg"; 
 
 const WeddingHome = () => {
   return (
     <div className="hero-section">
+    
+      <link rel="preload" href={WeddingCover} as="image" />
+
       <div
         className="hero-content"
         style={{ backgroundImage: `url(${WeddingCover})` }}
@@ -31,7 +34,6 @@ const WeddingHome = () => {
         <h3>Our Vow to You</h3>
         <p>“Before you take your vows, let us make one to you.”</p>
         <p data-aos="zoom-in">
-          {" "}
           We, at Fourth Munky, take a vow that we will do whatever it takes to
           make your dream come true. We promise that we will always be on our
           toes to get you everything you need for your wedding. We promise that
