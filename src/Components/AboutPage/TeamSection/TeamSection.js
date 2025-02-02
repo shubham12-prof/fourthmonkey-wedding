@@ -1,62 +1,67 @@
-import React from 'react';
-import TeamMember from '../TeamMember/TeamMember';
-import './TeamSection.css';
+import React from "react";
+import TeamMember from "../TeamMember/TeamMember";
+import "./TeamSection.css";
 
 const teamMembers = [
   {
-    name: 'Diwesh Joshi',
-    position: 'Director | Principal Designer',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1m6aE6Z5rz9CkX-D-zn0sJlAZikxJjbUsgg&s',
+    name: "Diwesh Joshi",
+    position: "Director | Principal Designer",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1m6aE6Z5rz9CkX-D-zn0sJlAZikxJjbUsgg&s",
     bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...",
     socials: [
-      { platform: 'facebook', link: 'https://facebook.com' },
-      { platform: 'linkedin', link: 'https://linkedin.com' },
-      { platform: 'envelope', link: 'mailto:example@example.com' }
-    ]
+      { platform: "facebook", link: "https://facebook.com" },
+      { platform: "linkedin", link: "https://linkedin.com" },
+      { platform: "envelope", link: "mailto:example@example.com" },
+    ],
   },
   {
-    name: 'Ishita',
-    position: 'Director | COO | Product Designer',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1m6aE6Z5rz9CkX-D-zn0sJlAZikxJjbUsgg&s',
-    bio: 'A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design....',
+    name: "Ishita",
+    position: "Director | COO | Product Designer",
+    image:
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png",
+    bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design....",
     socials: [
-      { platform: 'facebook', link: 'https://facebook.com' },
-      { platform: 'linkedin', link: 'https://linkedin.com' },
-      { platform: 'envelope', link: 'mailto:example@example.com' }
-    ]
+      { platform: "facebook", link: "https://facebook.com" },
+      { platform: "linkedin", link: "https://linkedin.com" },
+      { platform: "envelope", link: "mailto:example@example.com" },
+    ],
   },
   {
-    name: 'Bhavneet',
-    position: 'Director | COO | Product Designer',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1m6aE6Z5rz9CkX-D-zn0sJlAZikxJjbUsgg&s',
-    bio: 'A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...',
+    name: "Bhavneet",
+    position: "Director | COO | Product Designer",
+    image:
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png",
+    bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...",
     socials: [
-      { platform: 'facebook', link: 'https://facebook.com' },
-      { platform: 'linkedin', link: 'https://linkedin.com' },
-      { platform: 'envelope', link: 'mailto:example@example.com' }
-    ]
+      { platform: "facebook", link: "https://facebook.com" },
+      { platform: "linkedin", link: "https://linkedin.com" },
+      { platform: "envelope", link: "mailto:example@example.com" },
+    ],
   },
   {
-    name: 'Bhavneet',
-    position: 'Director | COO | Product Designer',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1m6aE6Z5rz9CkX-D-zn0sJlAZikxJjbUsgg&s',
-    bio: 'A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...',
+    name: "Bhavneet",
+    position: "Director | COO | Product Designer",
+    image:
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png",
+    bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...",
     socials: [
-      { platform: 'facebook', link: 'https://facebook.com' },
-      { platform: 'linkedin', link: 'https://linkedin.com' },
-      { platform: 'envelope', link: 'mailto:example@example.com' }
-    ]
+      { platform: "facebook", link: "https://facebook.com" },
+      { platform: "linkedin", link: "https://linkedin.com" },
+      { platform: "envelope", link: "mailto:example@example.com" },
+    ],
   },
   {
-    name: 'Bhavneet',
-    position: 'Director | COO | Product Designer',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1m6aE6Z5rz9CkX-D-zn0sJlAZikxJjbUsgg&s',
-    bio: 'A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...',
+    name: "Bhavneet",
+    position: "Director | COO | Product Designer",
+    image:
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png",
+    bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...",
     socials: [
-      { platform: 'facebook', link: 'https://facebook.com' },
-      { platform: 'linkedin', link: 'https://linkedin.com' },
-      { platform: 'envelope', link: 'mailto:example@example.com' }
-    ]
+      { platform: "facebook", link: "https://facebook.com" },
+      { platform: "linkedin", link: "https://linkedin.com" },
+      { platform: "envelope", link: "mailto:example@example.com" },
+    ],
   },
 ];
 

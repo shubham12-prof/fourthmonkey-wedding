@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -11,18 +11,35 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link
+      rel="preload"
+      href="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_449,h_448/xoexg6w5o9w5m74klbdg.jpg"
+      as="image"
+    /> -->
+    <!-- <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_449,h_448/v1738239905/xoexg6w5o9w5m74klbdg.jpg"
+    /> -->
+
     <!-- <link rel="preload" href="/assets/logo/logo.webp" as="image"/> -->
     <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
     <title>React App</title>
   </head>

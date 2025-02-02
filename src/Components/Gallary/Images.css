@@ -1,17 +1,8 @@
-body {
-  background-color: #f7f9fc;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
 .gallery-container {
   text-align: center;
   padding: 20px;
   margin-top: 6rem;
 }
-
 
 .gallery-container h1 {
   font-size: 2rem;
@@ -21,11 +12,10 @@ body {
   text-transform: capitalize;
   letter-spacing: 1px;
   margin-left: 10px;
-  border-left: 5px solid #007BFF;
+  border-left: 5px solid #007bff;
   padding-left: 10px;
   font-weight: bold;
 }
-
 
 .custom-gallery {
   display: grid;
@@ -33,7 +23,6 @@ body {
   gap: 10px;
   margin-top: 20px;
 }
-
 
 .gallery-image {
   width: 100%;
@@ -46,7 +35,6 @@ body {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 
 .fullscreen-gallery {
   position: fixed;
@@ -62,7 +50,6 @@ body {
   overflow-y: auto;
 }
 
-
 .image-gallery {
   width: 100%;
   max-width: 100%;
@@ -70,12 +57,11 @@ body {
 }
 
 .image-gallery-slide img {
-  width: 100%; 
-  height: auto; 
-  max-height: 100%; 
-  object-fit: contain; 
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
 }
-
 
 .close-gallery {
   position: absolute;
@@ -110,20 +96,20 @@ body {
 
 @media (max-width: 768px) {
   .fullscreen-gallery {
-    padding: 10px; 
+    padding: 10px;
   }
 
   .image-gallery-slide img {
-    max-width: 100%; 
+    max-width: 100%;
     max-height: 80vh;
   }
 
   .close-gallery {
-    padding: 6px 10px; 
-    font-size: 12px; 
+    padding: 6px 10px;
+    font-size: 12px;
   }
   .gallery-image {
-    object-fit: cover; 
+    object-fit: cover;
   }
   .gallery-image:hover {
     transform: scale(1.03);
@@ -132,12 +118,12 @@ body {
 
 @media (max-width: 480px) {
   .image-gallery-slide img {
-    max-width: 100%; 
+    max-width: 100%;
     max-height: 70vh;
   }
 
   .close-gallery {
-    padding: 4px 8px; 
-    font-size: 10px; 
+    padding: 4px 8px;
+    font-size: 10px;
   }
 }

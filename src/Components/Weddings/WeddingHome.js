@@ -5,19 +5,20 @@ import Hightlights from "../Highlights/Highlights";
 import AboutUs from "../AboutUs/AboutUs";
 import WeddingPlanning from "../WeddingPlanning/WeddingPlanning";
 import Contact from "../ContactUs/ContactForm";
-import WeddingCover from "../../assets/weddingCover.jpg"; 
+// import WeddingCover from "../../assets/weddingCover.jpg";
 
 const WeddingHome = () => {
   return (
     <div className="hero-section">
-    
-      <link rel="preload" href={WeddingCover} as="image" />
+      <link rel="preload" as="image" />
 
       <div
         className="hero-content"
-        style={{ backgroundImage: `url(${WeddingCover})` }}
+        style={{
+          backgroundImage: `url(${"https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178241/td6saxehedpuzrotdv5x.jpg"})`,
+        }}
       >
-        <div data-aos="fade-left">
+        <div className="hero-content-wedding">
           <h2>We promise moon and stars, and we deliver them.</h2>
           <h1>Fourth_Munky</h1>
           <a
@@ -30,19 +31,37 @@ const WeddingHome = () => {
           </a>
         </div>
       </div>
-      <div className="vow-section">
-        <h3>Our Vow to You</h3>
-        <p>“Before you take your vows, let us make one to you.”</p>
-        <p data-aos="zoom-in">
+      <div
+        className="vow-section"
+        style={{
+          backgroundColor: "white",
+          // padding: "2rem",
+          textAlign: "center",
+          fontSize: "2rem",
+        }}
+      >
+        <h3 style={{ color: "#FEDE00", fontSize: "3rem" }}>Our Vow to You</h3>
+        <p style={{ fontStyle: "italic", fontSize: "2rem", color: "#FEDE00" }}>
+          “Before you take your vows, let us make one to you.”
+        </p>
+        <p
+          data-aos="zoom-in"
+          style={{
+            fontStyle: "italic",
+            fontSize: "1.5rem",
+            maxWidth: "1020px",
+            margin: "0 auto",
+          }}
+        >
           We, at Fourth Munky, take a vow that we will do whatever it takes to
-          make your dream come true. We promise that we will always be on our
-          toes to get you everything you need for your wedding. We promise that
-          we will never break your trust. We love you and care for you and are
-          ready to take you to your new journey of life.
+          make your dream come true. toes to get you everything you need for
+          your wedding. We promise that we will never break your trust. We love
+          you and care for you and are ready to take you to your new journey of
+          life. We promise that we will always be on our
         </p>
       </div>
-      <AboutUs />
       <Hightlights />
+      <AboutUs />
       <WeddingPlanning />
       <Contact />
     </div>

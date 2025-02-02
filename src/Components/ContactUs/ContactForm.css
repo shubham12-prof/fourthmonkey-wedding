@@ -1,11 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -21,7 +13,7 @@
   flex-direction: column;
   width: 35%;
   display: flex;
-  background-color: #f9f9f9;
+  background-color: #fede00;
   padding: 20px;
   border-radius: 8px;
 }
@@ -63,8 +55,8 @@
 }
 
 .contact-right {
-  width: 60%;
-  background-color: #fff;
+  /* width: 60%; */
+  background-color: #fede00;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -143,7 +135,6 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
-
   .contact-left h2,
   .contact-right h2 {
     font-size: 1.25rem;

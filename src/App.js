@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
+import React, { lazy, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Home from "./Components/Home/Home";
-import WeddingHome from "./Components/Weddings/WeddingHome";
-import Portfolio from "./Components/Portfolio/Portfolio";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
 import ScrollToTop from "./Common/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AboutPage from "./Components/AboutPage/AboutPage";
 import Images from "./Components/Gallary/Images";
 
+const Home = lazy(() => import("./Components/Home/Home"));
+const WeddingHome = lazy(() => import("./Components/Weddings/WeddingHome"));
+const Header = lazy(() => import("./Components/Header/Header"));
+const Footer = lazy(() => import("./Components/Footer/Footer"));
+const Portfolio = lazy(() => import("./Components/Portfolio/Portfolio"));
+const AboutPage = lazy(() => import("./Components/AboutPage/AboutPage"));
 function App() {
   const location = useLocation();
 

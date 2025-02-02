@@ -1,162 +1,169 @@
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    color: rgb(135, 89, 89);
-    text-align: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: rgb(135, 89, 89);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
-
+.hero-content-wedding {
+  width: 65%;
+  text-align: left;
+  height: 27vh;
+}
 .hero-content h2 {
-    font-weight: 400;
-    margin-bottom: 10px;
-    font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 2rem;
 }
 
-.hero-content h2, h1, button {
-    font-weight: bold;
+.hero-content h2,
+h1,
+button {
+  font-weight: bold;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .hero-content a {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    border: none;
-    background-color: #999e4d;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #999e4d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .hero-content button:hover {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 .hero-content a:hover {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .vow-section {
-    text-align: center;
-    color: #676767;
-    padding: 1rem 10rem;
-    background-color: white;
+  text-align: center;
+  color: #676767;
+  padding: 1rem 10rem;
+  background-color: white;
 }
 
 .vow-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .vow-section p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
 }
 
 @media (max-width: 1024px) {
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
 
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
 
-    .hero-content a {
-        font-size: 0.9rem;
-        padding: 0.7rem 1.8rem;
-    }
+  .hero-content a {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.8rem;
+  }
 
-    .vow-section h3 {
-        font-size: 1.6rem;
-    }
+  .vow-section h3 {
+    font-size: 1.6rem;
+  }
 
-    .vow-section p {
-        font-size: 0.95rem;
-    }
+  .vow-section p {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero-content {
-        padding: 15px;
-        height: 90vh;
-    }
+  .hero-content {
+    padding: 15px;
+    height: 90vh;
+  }
 
-    .hero-content h1 {
-        font-size: 2rem;
-    }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
 
-    .hero-content h2 {
-        font-size: 1.5rem;
-    }
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
 
-    .hero-content a {
-        font-size: 0.85rem;
-        padding: 0.6rem 1.5rem;
-    }
+  .hero-content a {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.5rem;
+  }
 
-    .vow-section h3 {
-        font-size: 1.4rem;
-    }
+  .vow-section h3 {
+    font-size: 1.4rem;
+  }
 
-    .vow-section p {
-        font-size: 0.9rem;
-    }
+  .vow-section p {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero-content {
-        padding: 10px;
-        height: 80vh;
-    }
+  .hero-content {
+    padding: 10px;
+    height: 80vh;
+  }
 
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
 
-    .hero-content h2 {
-        font-size: 1.3rem;
-    }
+  .hero-content h2 {
+    font-size: 1.3rem;
+  }
 
-    .hero-content a {
-        font-size: 0.8rem;
-        padding: 0.5rem 1.2rem;
-    }
+  .hero-content a {
+    font-size: 0.6rem;
+    padding: 0.5rem 1.2rem;
+  }
 
-    .vow-section {
-        padding: 0.8rem 1.5rem;
-    }
+  .vow-section {
+    padding: 0.8rem 1.5rem;
+  }
 
-    .vow-section h3 {
-        font-size: 1.2rem;
-    }
+  .vow-section h3 {
+    font-size: 1.2rem;
+  }
 
-    .vow-section p {
-        font-size: 0.85rem;
-    }
+  .vow-section p {
+    font-size: 0.85rem;
+  }
 }

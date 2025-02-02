@@ -54,7 +54,7 @@ const Header = () => {
         </li>
       </ul>
       <div>
-        <Link to="WeddingHome">
+        <Link to="/WeddingHome">
           <picture>
             <source
               srcSet="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png"
@@ -62,7 +62,7 @@ const Header = () => {
             />
             <img
               className="svg-icon-header"
-              src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/f_auto,q_auto,w_80,h_80/p9x32n7xaw3pkt7ufdff.png"
+              src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/f_auto,q_auto,w_50,h_50/p9x32n7xaw3pkt7ufdff.png"
               alt="My SVG Icon"
               loading="eager"
             />

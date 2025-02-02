@@ -3,42 +3,47 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .header-text {
-  margin-top: 6rem;
-  text-align: center; 
+  margin-top: 5rem;
+  text-align: center;
+  font-display: optional;
 }
 
 .header-text h1 {
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.project-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
-  gap: 2rem; 
-  width: 100%;
+  font-display: optional;
 }
 
 .card-link {
-  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5rem;
+  width: 100%;
 }
+
 .card-portfolio {
   background-color: white;
+  width: 100%;
+  max-width: 400px;
 }
 
 .card-image-portfolio {
-  width: 100%;
-  height: auto;
-  max-width: 458px;
-  aspect-ratio: 4 / 4;
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
-
 .card-content-portfolio {
-  padding: 1rem; 
+  padding: 1rem;
   text-align: center;
+  width: 400px;
 }
 
 .card-content-portfolio h2 {
@@ -47,38 +52,71 @@
 }
 
 .card-content-portfolio p {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: #000;
+}
+@media (max-width: 828px) {
+  .header-text h1 {
+    font-size: 1.5rem;
+    font-display: optional;
+  }
+  .card-image-portfolio {
+    width: 350px;
+    height: 380px;
+    max-width: 400px;
+    /* aspect-ratio: 1 / 1; */
+    object-fit: cover;
+  }
+  .card-content-portfolio {
+    /* padding: 1rem; */
+    text-align: center;
+    width: auto;
+  }
+  .card-link {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
-    .header-text h1 {
-        font-size: 1.5rem; 
-    }
-  
-    .card-content-portfolio h2 {
-        font-size: 1.125rem; 
-    }
-  
-    .card-content-portfolio p {
-        font-size: .8rem;
-    }
+  .header-text h1 {
+    font-size: 1.5rem;
+    font-display: optional;
+  }
+  .card-image-portfolio {
+    width: 340px;
+    height: 350px;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .card-content-portfolio {
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+  }
+  .card-link {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
-    .header-text h1 {
-        font-size: 1.2rem;
-    }
-
-    .project-gallery {
-        gap: .75rem; 
-    }
-
-    .card-content-portfolio h2 {
-        font-size: 1rem; 
-    }
-
-    .card-content-portfolio p {
-        font-size: .75rem; 
-    }
+  .header-text h1 {
+    font-size: 1.2rem;
+    font-display: optional;
+  }
+  .card-image-portfolio {
+    width: 340px;
+    height: 350px;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .card-content-portfolio {
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+  }
+  .card-link {
+    text-align: center;
+  }
 }

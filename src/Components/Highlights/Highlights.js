@@ -2,9 +2,9 @@ import React from "react";
 import "./Highlights.css";
 import { Link } from "react-router-dom";
 const images = [
-  "https://images.pexels.com/photos/752842/pexels-photo-752842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/931796/pexels-photo-931796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738349280/z4qn0uqrpmefibcflwi8.jpg",
+  "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738334064/yfu6fy9fhqvw77zez1yx.webp",
+  "https://res.cloudinary.com/dmj6ur8sm/image/upload/c_fill,w_300,h_400/v1738349281/wnvfdaizzfwh25ewnghx.jpg",
 ];
 
 function ImageBox() {
@@ -13,7 +13,9 @@ function ImageBox() {
       {/* <h3>
           Take time to see our previous weddings to understand …………………………
         </h3> */}
-      <h2 className="header">HIGHLIGHTS</h2>
+      <h2 style={{ color: "#FEDE00", fontSize: "3rem" }} className="header">
+        HIGHLIGHTS
+      </h2>
       <div data-aos="zoom-in" className="image-box">
         {images.map((src, index) => (
           <img key={index} src={src} alt="pictures" className="image" />

@@ -1,45 +1,40 @@
-import React from 'react';
-import './WeddingPlanning.css';
+import React from "react";
+import "./WeddingPlanning.css";
+import { FaHeart, FaPalette, FaMusic } from "react-icons/fa";
 
 const WeddingPlanning = () => {
+  const services = [
+    {
+      icon: <FaHeart size={50} color="#e91e63" />,
+      title: "Complete Wedding Planning",
+      description:
+        "From start to finish, we handle every detail of your dream wedding, ensuring a stress-free and unforgettable experience.",
+    },
+    {
+      icon: <FaPalette size={50} color="#ff9800" />,
+      title: "Concept Planning & Decor Designing",
+      description:
+        "Our expert designers bring your vision to life with unique concepts and breathtaking decorations, making your event truly special.",
+    },
+    {
+      icon: <FaMusic size={50} color="#3f51b5" />,
+      title: "Entertainment Planning & Management",
+      description:
+        "We organize top-tier entertainment, from live performances to DJ setups, ensuring your guests have a fantastic time.",
+    },
+  ];
+
   return (
-    <section className="wedding-planning">
-      <h2>Complete Wedding Planning</h2>
-      <div data-aos="fade-up" className="service-list">
-        <div className="service">
-          <h3>Conceptualizing and Storytelling</h3>
-          <p>We create unique wedding stories and experiences tailored to your vision.</p>
+    <div className="wedding-planning-container">
+      {services.map((service, index) => (
+        <div key={index} className="card">
+          <div className="icon">{service.icon}</div>
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+          <button className="learn-more">Learn More</button>
         </div>
-        <div className="service">
-          <h3>Décor Designing and Planning</h3>
-          <p>Our team designs beautiful, personalized décor that complements your style.</p>
-        </div>
-        <div className="service">
-          <h3>Guest Management</h3>
-          <p>We manage invitations, RSVPs, and ensure your guests are well taken care of.</p>
-        </div>
-        <div className="service">
-          <h3>Catering</h3>
-          <p>From gourmet meals to themed menus, we ensure your guests are delighted.</p>
-        </div>
-        <div className="service">
-          <h3>Vendor Sourcing</h3>
-          <p>We handle the sourcing and coordination of trusted vendors for your big day.</p>
-        </div>
-        <div className="service">
-          <h3>Entertainment</h3>
-          <p>We bring your celebration to life with curated entertainment options.</p>
-        </div>
-        <div className="service">
-          <h3>Artist & Celebrity Management</h3>
-          <p>From live performances to celebrity appearances, we coordinate all entertainment needs.</p>
-        </div>
-        <div className="service">
-          <h3>Venue and Hospitality Management</h3>
-          <p>We handle venue selection, accommodation, and guest hospitality with utmost care.</p>
-        </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 };
 

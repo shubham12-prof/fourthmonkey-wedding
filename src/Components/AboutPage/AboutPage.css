@@ -1,36 +1,13 @@
-body {
-  /* font-family: "Edu AU VIC WA NT Pre", cursive; */
-  /* font-optical-sizing: auto; */
-  /* font-weight: lighter; */
-  font-size: small;
-}
-
 .about-container {
-  /* background-color: white; */
-  z-index: 31;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 3rem;
 }
 
-.about-background {
-  width: 99%;
-  height: 200px; 
-  z-index: 31;
-}
-.about-background-image{
-  /* position: relative;
-  top: 0;
-  left: 0; */
-  width: 100vw;
-  height: 45vh;
+.about-background-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-}
-.about-background-text {
-  color: white;
-  font-size: 22px;
-  /* font-weight: bold; */
-  text-align: center;
-  font-style: normal;
-  /* padding: 20px; */
-  border-radius: 8px;
 }
 
 .about-content {
@@ -41,40 +18,143 @@ body {
   background-color: #fffefe;
   padding: 30px;
   width: 100%;
-  margin-top: 0.5rem;
 }
-.about-svg-image{
-  width: 350px;
-  position: absolute;
-  }
-.about-image img {
-  border-radius: 8px;
-  position: absolute;
-  top: 16rem;
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.about-svg-image {
+  width: 80px;
+  height: 80px;
+}
+
+.about-text {
+  flex: 2;
 }
 
 .about-text h2 {
-  color: #ffffff;
-  margin-bottom: 10px;
   font-size: 2em;
+  color: #fede00;
 }
 
-.about-text p {
-  font-size: 1.5em;
-  color: #ffffff;
-  line-height: 1.5;
-  /* font-style: oblique; */
-  height: 123px;
-  text-align: left;
+.wedding-decor,
+.about-text,
+.who-we-are,
+.testimonials,
+.entertainment-services {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
+.wedding-decor h2,
+.who-we-are h2,
+.testimonials h2,
+.entertainment-services h2 {
+  font-size: 2em;
+  color: #fede00;
+}
+
+.wedding-decor p,
+.about-text,
+.who-we-are p,
+.testimonials p {
+  font-size: 1.2em;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.entertainment-services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.entertainment-services ul li {
+  font-size: 1.2em;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.explore-events {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fede00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
   .about-content {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-image img {
-    max-width: 15%;
+  .about-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 1.8em;
+  }
+
+  .about-text p {
+    font-size: 1em;
+  }
+
+  .wedding-decor h2,
+  .who-we-are h2,
+  .testimonials h2,
+  .entertainment-services h2 {
+    font-size: 1.8em;
+  }
+
+  .wedding-decor p,
+  .who-we-are p,
+  .testimonials p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-svg-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-text h2 {
+    font-size: 1.5em;
+  }
+
+  .about-text p {
+    font-size: 0.9em;
+  }
+
+  .wedding-decor h2,
+  .who-we-are h2,
+  .testimonials h2,
+  .entertainment-services h2 {
+    font-size: 1.5em;
+  }
+
+  .wedding-decor p,
+  .who-we-are p,
+  .testimonials p {
+    font-size: 0.9em;
+  }
+
+  .explore-events {
+    padding: 8px 16px;
   }
 }

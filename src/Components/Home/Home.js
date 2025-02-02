@@ -7,7 +7,6 @@ import Websvg from "../../Images/fourth-munky-weddings-floral.svg";
 const ButtonComponent = () => {
   const [hoverBackgroundImage, setHoverBackgroundImage] = useState("");
 
-  // Preload images and SVG icon
   useEffect(() => {
     const images = [
       "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg",
@@ -33,7 +32,7 @@ const ButtonComponent = () => {
     <div className="page-container">
       <div className="svg-icon-container-home">
         <img
-          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_300,h_80/v1738178375/fn6ioy0xhovof24vsvrt.png"
+          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_300,h_80/v1738178375/ygvq9amfwxtk6jvnwfgh.png"
           alt="Icon"
           // className="svg-icon-home"
         />
@@ -49,6 +48,15 @@ const ButtonComponent = () => {
         }}
       >
         <div className="overlay">
+          <p
+            style={{
+              fontSize: "2rem",
+              textTransform: "uppercase",
+              fontStyle: "none",
+            }}
+          >
+            Two Divisions, One Promise: Perfection
+          </p>
           <div className="button-container">
             <Link
               data-aos="fade-right"
@@ -71,7 +79,8 @@ const ButtonComponent = () => {
               >
                 DISCOVER
               </span>
-              WEDDINGS BY FOURTH MUNKY
+              WEDDINGS BY
+              <span>FOURTH MUNKY</span>
             </Link>
             <Link
               data-aos="fade-left"
@@ -94,7 +103,8 @@ const ButtonComponent = () => {
               >
                 EXPLORE
               </span>
-              FOURTH MUNKY ENTERTAINMENT
+              FOURTH MUNKY
+              <span>ENTERTAINMENT</span>
             </Link>
           </div>
         </div>
