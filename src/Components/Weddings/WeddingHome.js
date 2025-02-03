@@ -20,7 +20,7 @@ const WeddingHome = () => {
       >
         <div className="hero-content-wedding">
           <h2>We promise moon and stars, and we deliver them.</h2>
-          <h1>Fourth_Munky</h1>
+          <h1>FourthMonkey</h1>
           <a
             href="https://wa.me/7417065899?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20free%20consultation%20for%20wedding%20planning."
             target="_blank"
@@ -60,8 +60,8 @@ const WeddingHome = () => {
           life. We promise that we will always be on our
         </p>
       </div>
-      <Hightlights />
       <AboutUs />
+      <Hightlights />
       <WeddingPlanning />
       <Contact />
     </div>

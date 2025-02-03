@@ -45,14 +45,15 @@ button {
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .hero-content a {
   padding: 0.8rem 2rem;
   font-size: 1rem;
   border: none;
-  background-color: #999e4d;
-  color: white;
+  background-color: rgb(0, 0, 0);
+  color: rgb(254, 222, 0);
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;

@@ -33,7 +33,7 @@ const Portfolio = () => {
       <div className="card-link">
         {projects.map((project) => (
           <Link
-            to={`/Images/${project.id}`} 
+            to={`/Images/${project.id}`}
             key={project.id}
             style={{ textDecoration: "none", color: "inherit" }}
           >

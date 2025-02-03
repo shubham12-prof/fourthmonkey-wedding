@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import backgroundImage from "../../Images/Home.jpg";
 import Websvg from "../../Images/fourth-munky-weddings-floral.svg";
+import { motion } from "framer-motion";
 
 const ButtonComponent = () => {
   const [hoverBackgroundImage, setHoverBackgroundImage] = useState("");
@@ -32,7 +33,7 @@ const ButtonComponent = () => {
     <div className="page-container">
       <div className="svg-icon-container-home">
         <img
-          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_300,h_80/v1738178375/ygvq9amfwxtk6jvnwfgh.png"
+          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_300,h_80/v1738178375/heelourbhu4c0t3ijrch.png"
           alt="Icon"
           // className="svg-icon-home"
         />
@@ -48,15 +49,19 @@ const ButtonComponent = () => {
         }}
       >
         <div className="overlay">
-          <p
+          <motion.p
             style={{
               fontSize: "2rem",
               textTransform: "uppercase",
               fontStyle: "none",
             }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
           >
-            Two Divisions, One Promise: Perfection
-          </p>
+            <span style={{ fontSize: "3rem" }}>Two Divisions,</span> One
+            Promise: Perfection
+          </motion.p>
           <div className="button-container">
             <Link
               data-aos="fade-right"

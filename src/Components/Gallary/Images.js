@@ -12,18 +12,29 @@ const Images = () => {
   if (!project) return <p>Project not found</p>;
 
   return (
-    <div className="gallery-container">
-      <h1>{project.title} Gallery</h1>
-      <div className="custom-gallery">
-        {project.galleryImages.map((image, index) => (
-          <LazyLoadImage
-            key={index}
-            alt={`Gallery image ${index + 1}`}
-            src={image.original}
-            effect="blur"
-            className="gallery-image"
-          />
-        ))}
+    <div style={{ marginTop: "5rem" }} className="gallery-container">
+      <h1>
+        {project.title} Gallery <span className="yellow-line">|</span>
+      </h1>
+
+      <div className="grid-gallery">
+        {project.galleryImages.map((image, index) => {
+          const isLarge = index === 0;
+          return (
+            <LazyLoadImage
+              key={index}
+              alt={`Gallery image ${index + 1}`}
+              src={image.original}
+              effect="blur"
+              className={`gallery-item ${isLarge ? "large" : ""} item-${
+                index + 1
+              }`}
+              wrapperClassName={`gallery-item-wrapper ${
+                isLarge ? "large" : ""
+              }`}
+            />
+          );
+        })}
       </div>
     </div>
   );

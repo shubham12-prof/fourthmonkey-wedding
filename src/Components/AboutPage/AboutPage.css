@@ -46,7 +46,7 @@
 .who-we-are,
 .testimonials,
 .entertainment-services {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .wedding-decor p,
-.about-text,
+.about-text p,
 .who-we-are p,
 .testimonials p {
   font-size: 1.2em;

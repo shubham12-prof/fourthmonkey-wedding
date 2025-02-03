@@ -7,18 +7,12 @@ const importAll = (r) => {
   return images;
 };
 
-// Import local images dynamically
 const images = importAll(
   require.context("../../assets/images", true, /\.(jpg|jpeg|png|gif|JPG)$/)
 );
 
 const cloudinaryBaseURL =
   "https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_380,h_380/";
-// https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738349281/hurt4rpfreppsmsjvdd5.jpg
-// https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738349281/wnvfdaizzfwh25ewnghx.jpg
-// https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738349280/txymycibydzslg2cbscg.jpg
-// https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738349281/yynr0zqsnkyyy1ldepx0.jpg
-// https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738349280/z4qn0uqrpmefibcflwi8.jpg
 export const projects = [
   {
     id: 1,

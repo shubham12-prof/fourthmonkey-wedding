@@ -8,6 +8,10 @@
   gap: 20px;
   width: 100%;
   align-items: flex-start;
+  width: 100%;
+  min-height: 150px;
+  position: relative;
+  z-index: 103;
 }
 
 .footer-section {

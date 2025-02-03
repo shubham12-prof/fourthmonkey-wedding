@@ -27,11 +27,11 @@
   width: 100%;
 }
 
-.card-portfolio {
+/* .card-portfolio {
   background-color: white;
   width: 100%;
   max-width: 400px;
-}
+} */
 
 .card-image-portfolio {
   width: 400px;
@@ -43,7 +43,7 @@
 .card-content-portfolio {
   padding: 1rem;
   text-align: center;
-  width: 400px;
+  width: auto;
 }
 
 .card-content-portfolio h2 {
