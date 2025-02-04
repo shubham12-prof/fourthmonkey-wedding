@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/fourthmonkey-wedding/static/css/main.ac8194df.css",
-    "main.js": "/fourthmonkey-wedding/static/js/main.c999f575.js",
+    "main.js": "/fourthmonkey-wedding/static/js/main.eaf50e8e.js",
     "static/css/30.e8fd72f1.chunk.css": "/fourthmonkey-wedding/static/css/30.e8fd72f1.chunk.css",
     "static/js/30.ea703261.chunk.js": "/fourthmonkey-wedding/static/js/30.ea703261.chunk.js",
-    "static/css/923.ae061423.chunk.css": "/fourthmonkey-wedding/static/css/923.ae061423.chunk.css",
+    "static/css/923.5d3b9e9f.chunk.css": "/fourthmonkey-wedding/static/css/923.5d3b9e9f.chunk.css",
     "static/js/923.73e01a4d.chunk.js": "/fourthmonkey-wedding/static/js/923.73e01a4d.chunk.js",
     "static/css/661.c57fdf07.chunk.css": "/fourthmonkey-wedding/static/css/661.c57fdf07.chunk.css",
     "static/js/661.12fe66ef.chunk.js": "/fourthmonkey-wedding/static/js/661.12fe66ef.chunk.js",
@@ -259,10 +259,10 @@
     "static/media/fa-v4compatibility.woff2": "/fourthmonkey-wedding/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/fourthmonkey-wedding/index.html",
     "main.ac8194df.css.map": "/fourthmonkey-wedding/static/css/main.ac8194df.css.map",
-    "main.c999f575.js.map": "/fourthmonkey-wedding/static/js/main.c999f575.js.map",
+    "main.eaf50e8e.js.map": "/fourthmonkey-wedding/static/js/main.eaf50e8e.js.map",
     "30.e8fd72f1.chunk.css.map": "/fourthmonkey-wedding/static/css/30.e8fd72f1.chunk.css.map",
     "30.ea703261.chunk.js.map": "/fourthmonkey-wedding/static/js/30.ea703261.chunk.js.map",
-    "923.ae061423.chunk.css.map": "/fourthmonkey-wedding/static/css/923.ae061423.chunk.css.map",
+    "923.5d3b9e9f.chunk.css.map": "/fourthmonkey-wedding/static/css/923.5d3b9e9f.chunk.css.map",
     "923.73e01a4d.chunk.js.map": "/fourthmonkey-wedding/static/js/923.73e01a4d.chunk.js.map",
     "661.c57fdf07.chunk.css.map": "/fourthmonkey-wedding/static/css/661.c57fdf07.chunk.css.map",
     "661.12fe66ef.chunk.js.map": "/fourthmonkey-wedding/static/js/661.12fe66ef.chunk.js.map",
@@ -279,6 +279,6 @@
   },
   "entrypoints": [
     "static/css/main.ac8194df.css",
-    "static/js/main.c999f575.js"
+    "static/js/main.eaf50e8e.js"
   ]
 }
