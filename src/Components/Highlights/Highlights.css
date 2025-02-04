@@ -17,13 +17,13 @@
   letter-spacing: 2px;
   margin-bottom: 20px;
   font-style: normal;
-  color: white;
+  color: #f2c300;
   margin-top: 20px;
 }
 
 .image-box {
   display: flex;
-  gap: 5%;
+  gap: 2%;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -35,8 +35,8 @@
   object-fit: cover;
   max-width: 300px;
   height: 400px;
-  max-width: 450px;
-  height: 618px;
+  max-width: 317px;
+  height: 470px;
 }
 
 .image:hover {
@@ -79,10 +79,10 @@
   }
 
   .header {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .view-all-button {
-    width: 100%;
+    padding: 0.5rem;
   }
 }

@@ -16,7 +16,7 @@ const Images = () => {
       <h1>
         {project.title} Gallery <span className="yellow-line"></span>
       </h1>
-
+      <h1>{project.galleryTitle}</h1>
       <div className="grid-gallery">
         {project.galleryImages.map((image, index) => {
           const isLarge = index === 0;

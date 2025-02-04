@@ -22,13 +22,14 @@
 .contact-right h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: black;
+  color: white;
   font-style: normal;
 }
 
 .contact-left p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 .social-icon {
@@ -39,7 +40,7 @@
 }
 
 .social-icon a {
-  color: #333;
+  color: #fff5f5;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -64,7 +65,7 @@
 
 .contact-right p {
   margin-bottom: 15px;
-  color: #666;
+  color: #ffffff;
   font-style: italic;
   font-size: medium;
 }
@@ -85,7 +86,7 @@ form textarea {
 
 form button {
   padding: 10px;
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   font-size: 1rem;
   border: none;

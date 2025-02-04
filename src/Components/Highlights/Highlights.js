@@ -13,9 +13,7 @@ function ImageBox() {
       {/* <h3>
           Take time to see our previous weddings to understand …………………………
         </h3> */}
-      <h2 style={{ color: "#FEDE00", fontSize: "3rem" }} className="header">
-        HIGHLIGHTS
-      </h2>
+      <h2 className="header">HIGHLIGHTS</h2>
       <div data-aos="zoom-in" className="image-box">
         {images.map((src, index) => (
           <img key={index} src={src} alt="pictures" className="image" />

@@ -9,6 +9,9 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  font-family: sans-serif;
+  font-style: normal;
+  cursor: pointer;
 }
 
 .hero-content {
@@ -60,12 +63,9 @@ button {
   text-decoration: none;
 }
 
-.hero-content button:hover {
-  background-color: #fafafa;
-}
-
 .hero-content a:hover {
-  background-color: #000000;
+  background-color: #f8f8f8;
+  color: black;
 }
 
 .vow-section {
@@ -73,18 +73,26 @@ button {
   color: #676767;
   padding: 1rem 10rem;
   background-color: white;
+  text-align: "center";
 }
 
-.vow-section h3 {
-  font-size: 1.8rem;
+.vow-section h1 {
+  font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: #f2c300;
 }
-
+.vow-section h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 300;
+  color: #f2c300;
+}
 .vow-section p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  font-style: italic;
+  font-size: 1.45rem;
+  line-height: 1.5;
+  margin-top: 0px auto;
+  color: #000000;
+  max-width: 1020px;
 }
 
 @media (max-width: 1024px) {
@@ -97,16 +105,26 @@ button {
   }
 
   .hero-content a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 0.7rem 1.8rem;
   }
 
   .vow-section h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
-
+  .vow-section h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .vow-section h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 300;
+  }
   .vow-section p {
-    font-size: 0.95rem;
+    font-size: 1.45rem;
+    margin-top: 0px auto;
+    max-width: 1020px;
   }
 }
 
@@ -128,13 +146,25 @@ button {
     font-size: 0.85rem;
     padding: 0.6rem 1.5rem;
   }
-
-  .vow-section h3 {
-    font-size: 1.4rem;
+  .vow-section {
+    width: 90%;
   }
-
+  .vow-section h3 {
+    font-size: 2rem;
+  }
+  .vow-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .vow-section h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    font-weight: 300;
+  }
   .vow-section p {
-    font-size: 0.9rem;
+    font-size: 1.45rem;
+    margin-top: 0px auto;
+    max-width: 1020px;
   }
 }
 
@@ -162,10 +192,10 @@ button {
   }
 
   .vow-section h3 {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }
 
   .vow-section p {
-    font-size: 0.85rem;
+    font-size: 1.3rem;
   }
 }

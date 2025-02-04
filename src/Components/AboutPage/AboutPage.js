@@ -2,6 +2,7 @@ import React from "react";
 // import { Helmet } from "react-helmet";
 import "./AboutPage.css";
 import TeamSection from "./TeamSection/TeamSection";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -85,17 +86,9 @@ const AboutPage = () => {
       </section>
 
       <section className="entertainment-services">
-        <h2>Entertainment Services</h2>
-        <ul>
-          <li>Artist & Talent Management</li>
-          <li>Stage Design & Production</li>
-          <li>Sound & Light Engineering</li>
-          <li>Crowd Management</li>
-          <li>Brand Collaborations & Sponsorships</li>
-        </ul>
-        <a href="/events" className="explore-events">
-          Explore Our Events
-        </a>
+        <Link to="/portfolio" className="explore-events">
+          EXPLORE OUR PORTFOLIO
+        </Link>
       </section>
     </div>
   );
