@@ -13,7 +13,7 @@
   flex-direction: column;
   width: 35%;
   display: flex;
-  background-color: #fede00;
+  background-color: #f2c300;
   padding: 20px;
   border-radius: 8px;
 }
@@ -56,7 +56,7 @@
 
 .contact-right {
   /* width: 60%; */
-  background-color: #fede00;
+  background-color: #f2c300;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

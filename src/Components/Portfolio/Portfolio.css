@@ -6,6 +6,9 @@
   max-width: 1400px;
   margin: 0 auto;
   overflow: hidden;
+  font-family: "sans-sarif";
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .header-text {
@@ -83,8 +86,8 @@
     font-display: optional;
   }
   .card-image-portfolio {
-    width: 340px;
-    height: 350px;
+    width: 400px;
+    height: 450px;
     max-width: 400px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -106,7 +109,7 @@
   }
   .card-image-portfolio {
     width: 340px;
-    height: 350px;
+    height: 400px;
     max-width: 400px;
     aspect-ratio: 1 / 1;
     object-fit: cover;

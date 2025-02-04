@@ -1,89 +1,87 @@
 .team-member {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  text-align: center;
+  border-radius: 10px;
   padding: 20px;
-  border-radius: 8px;
-  color: #ffffff;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.member-photo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 20px;
-  flex-shrink: 0;
+.team-member:hover {
+  transform: translateY(-5px);
 }
 
 .member-info {
-  flex: 1;
-  color: #000000;
+  padding: 15px;
 }
 
+.member-photo {
+  width: 350px;
+  height: 350px;
+}
 .member-info h3 {
-  margin: 0;
-  font-size: clamp(18px, 2.5vw, 24px);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
 }
 
 .position {
-  font-style: italic;
-  color: #000000;
-  font-size: clamp(14px, 2vw, 18px);
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffcc00;
 }
 
 .bio {
-  margin: 10px 0;
-  color: #000000;
-  font-size: clamp(14px, 1.8vw, 16px);
+  font-size: 0.9rem;
+  color: #666;
   line-height: 1.5;
+  margin-top: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
 }
 
 .social-icons a {
-  color: #000000;
-  margin-right: 10px;
-  font-size: clamp(14px, 2vw, 18px);
-  transition: color 0.3s ease;
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-  color: #b99e00;
+  color: #ffcc00;
 }
 
+/* Responsive Styling */
 @media (max-width: 768px) {
   .team-member {
+    max-width: 100%;
     padding: 15px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
   .member-photo {
-    margin-right: 0;
-    margin-bottom: 15px;
+    max-height: 300px;
+  }
+
+  .member-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .position {
+    font-size: 1rem;
   }
 
   .bio {
-    font-size: clamp(13px, 2vw, 15px);
+    font-size: 0.85rem;
+    max-width: 300px;
   }
 
   .social-icons a {
-    font-size: clamp(12px, 2vw, 16px);
-  }
-}
-
-@media (max-width: 480px) {
-  .team-member {
-    padding: 10px;
-  }
-
-  .bio {
-    font-size: clamp(12px, 3vw, 14px);
-  }
-
-  .social-icons a {
-    font-size: clamp(11px, 3vw, 14px);
+    font-size: 1rem;
   }
 }

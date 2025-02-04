@@ -46,6 +46,7 @@ button {
   font-size: 3rem;
   margin-bottom: 20px;
   color: white;
+  width: 100%;
 }
 
 .hero-content a {

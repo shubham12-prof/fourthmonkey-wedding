@@ -12,7 +12,7 @@ const ButtonComponent = () => {
     const images = [
       "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg",
       "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg",
-      backgroundImage,
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738587314/izrv2pdz9iy9x9vfwykn.jpg",
       Websvg,
     ];
     images.forEach((src) => {
@@ -43,7 +43,7 @@ const ButtonComponent = () => {
         style={{
           backgroundImage: hoverBackgroundImage
             ? `url(${hoverBackgroundImage})`
-            : `url(${backgroundImage})`,
+            : `url(${"https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738587314/izrv2pdz9iy9x9vfwykn.jpg"})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

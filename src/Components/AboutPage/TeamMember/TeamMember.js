@@ -1,5 +1,5 @@
-import React from 'react';
-import './TeamMember.css';
+import React from "react";
+import "./TeamMember.css";
 
 const TeamMember = ({ name, position, image, bio, socials }) => {
   return (
@@ -11,7 +11,12 @@ const TeamMember = ({ name, position, image, bio, socials }) => {
         <p className="bio">{bio}</p>
         <div className="social-icons">
           {socials.map((social, index) => (
-            <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
+            <a
+              key={index}
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className={`fab fa-${social.platform}`} />
             </a>
           ))}

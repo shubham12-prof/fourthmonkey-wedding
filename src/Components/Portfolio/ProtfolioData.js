@@ -16,7 +16,7 @@ const cloudinaryBaseURL =
 export const projects = [
   {
     id: 1,
-    title: "Sanchit",
+    title: "Sanchit + aishwarya",
     description: "Your wedding day should be magical.",
     imageUrl: `${cloudinaryBaseURL}hurt4rpfreppsmsjvdd5.jpg`,
     galleryImages: Object.entries(images)
@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Bhavneet and Ritvika",
+    title: "Bhavneet + Ritvika",
     description: "A day filled with joy and laughter.",
     imageUrl: `${cloudinaryBaseURL}wnvfdaizzfwh25ewnghx.jpg`,
     galleryImages: Object.entries(images)
@@ -48,7 +48,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Bharti and Rishab",
+    title: "Bharti + Rishab",
     description: "A day filled with joy and laughter.",
     imageUrl: `${cloudinaryBaseURL}txymycibydzslg2cbscg.jpg`,
     galleryImages: Object.entries(images)
@@ -66,7 +66,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Dheeraj and Ananya",
+    title: "Dheeraj + Ananya",
     description: "A celebration of love and togetherness.",
     imageUrl: `${cloudinaryBaseURL}yynr0zqsnkyyy1ldepx0.jpg`,
     galleryImages: Object.entries(images)
@@ -82,7 +82,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Tanvi and Aman",
+    title: "Tanvi + Aman",
     description: "A day filled with joy and laughter.",
     imageUrl: `${cloudinaryBaseURL}z4qn0uqrpmefibcflwi8.jpg`,
     galleryImages: Object.entries(images)

@@ -1,21 +1,21 @@
 import React from "react";
 import "./AboutUs.css";
 import { Link } from "react-router-dom";
-import AboutPage from "../../assets/aboutcover.JPG";
+// import AboutPage from "../../assets/aboutcover.JPG";
 const AboutUs = () => {
   return (
     <div style={{ marginTop: "2rem" }} className="about-us-container">
       <div className="image-section">
         <img
-          className="about-image"
+          className="aboutus-image"
           data-aos="fade-right"
-          src={AboutPage}
+          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738334064/pkycpvd9vqk6i0aaysfq.webp"
           alt="about-image"
         />
       </div>
       <div className="text-section">
-        <h2 style={{ color: "#FEDE00", fontSize: "3rem" }}>WHAT WE DO</h2>
-        <p style={{ color: "black" }} data-aos="fade-left">
+        <h2>WHAT WE DO</h2>
+        <p data-aos="fade-left">
           We provide complete wedding planning and designing solutions. Right
           from listening to your dreams & fantasies, to finding dreamland for
           it, and designing the space, creating and delivering invitations,
@@ -23,11 +23,7 @@ const AboutUs = () => {
           entertainment, to the final vow; we get everything sorted. And we
           assure class and luxury in our services.
         </p>
-        <button
-          style={{ backgroundColor: "#FEDE00" }}
-          className="know-more-button"
-        >
-          {" "}
+        <button className="know-more-button">
           <Link to="/AboutUs">Know More</Link>
         </button>
       </div>

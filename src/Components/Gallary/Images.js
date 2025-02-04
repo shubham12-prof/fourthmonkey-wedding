@@ -14,7 +14,7 @@ const Images = () => {
   return (
     <div style={{ marginTop: "5rem" }} className="gallery-container">
       <h1>
-        {project.title} Gallery <span className="yellow-line">|</span>
+        {project.title} Gallery <span className="yellow-line"></span>
       </h1>
 
       <div className="grid-gallery">

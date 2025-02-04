@@ -33,12 +33,19 @@
 }
 
 .about-text {
+  margin-top: 1.5rem;
   flex: 2;
+  align-items: center;
+  display: flex;
 }
 
 .about-text h2 {
-  font-size: 2em;
-  color: #fede00;
+  font-size: 1.5em;
+  font-weight: 400;
+  /* color: #fede00; */
+  margin: 1rem auto;
+  width: 60%;
+  max-width: 800;
 }
 
 .wedding-decor,
@@ -54,18 +61,24 @@
 .who-we-are h2,
 .testimonials h2,
 .entertainment-services h2 {
-  font-size: 2em;
-  color: #fede00;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #f2c300;
+  margin: 1rem auto;
+  width: 60%;
+  max-width: 800;
 }
 
 .wedding-decor p,
 .about-text p,
 .who-we-are p,
 .testimonials p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight: 300;
   color: #000000;
-  max-width: 800px;
-  margin: 0 auto;
+  margin: 1rem auto;
+  width: 60%;
+  max-width: 800;
 }
 
 .entertainment-services ul {
@@ -97,6 +110,7 @@
 
   .about-text {
     text-align: center;
+    /* width: 100%; */
   }
 }
 
@@ -106,7 +120,8 @@
   }
 
   .about-text h2 {
-    font-size: 1.8em;
+    font-size: 1em;
+    width: 100%;
   }
 
   .about-text p {
@@ -124,6 +139,7 @@
   .who-we-are p,
   .testimonials p {
     font-size: 1em;
+    width: 100%;
   }
 }
 
@@ -134,11 +150,12 @@
   }
 
   .about-text h2 {
-    font-size: 1.5em;
+    font-size: 1em;
+    width: 100%;
   }
 
   .about-text p {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .wedding-decor h2,
@@ -152,6 +169,7 @@
   .who-we-are p,
   .testimonials p {
     font-size: 0.9em;
+    width: 100%;
   }
 
   .explore-events {

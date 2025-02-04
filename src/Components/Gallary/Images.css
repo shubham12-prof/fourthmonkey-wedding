@@ -31,7 +31,6 @@
   object-fit: cover;
 }
 
-/* Size variations for different items */
 .gallery-item-wrapper.large {
   grid-column: span 2;
   grid-row: span 2;
@@ -63,11 +62,11 @@ h1 {
 }
 
 .yellow-line {
-  color: #ffcc00;
+  /* color: #ffcc00;
   font-size: 2.5rem;
   margin-left: 10px;
   position: relative;
-  display: inline-block;
+  display: inline-block; */
 }
 
 .yellow-line:after {

@@ -7,9 +7,10 @@
   z-index: 20;
   /* padding: 1rem 2rem; */
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: brightness(0.5);
 }
 
 .nav-links {
@@ -19,14 +20,14 @@
 }
 
 .link-style {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  /* font-weight: bold; */
+  font-weight: 400;
   transition: color 0.3s;
 }
 
 .link-style:hover {
-  color: yellow;
+  color: rgb(0, 0, 0);
 }
 
 .hamburger-icon {

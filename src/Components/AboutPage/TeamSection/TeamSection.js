@@ -7,7 +7,7 @@ const teamMembers = [
     name: "Diwesh Joshi",
     position: "Director | Principal Designer",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1m6aE6Z5rz9CkX-D-zn0sJlAZikxJjbUsgg&s",
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738003354/samples/man-portrait.jpg",
     bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...",
     socials: [
       { platform: "facebook", link: "https://facebook.com" },
@@ -19,7 +19,7 @@ const teamMembers = [
     name: "Ishita",
     position: "Director | COO | Product Designer",
     image:
-      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png",
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738003354/samples/man-portrait.jpg",
     bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design....",
     socials: [
       { platform: "facebook", link: "https://facebook.com" },
@@ -31,7 +31,7 @@ const teamMembers = [
     name: "Bhavneet",
     position: "Director | COO | Product Designer",
     image:
-      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png",
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738003354/samples/man-portrait.jpg",
     bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...",
     socials: [
       { platform: "facebook", link: "https://facebook.com" },
@@ -43,7 +43,7 @@ const teamMembers = [
     name: "Bhavneet",
     position: "Director | COO | Product Designer",
     image:
-      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png",
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738003354/samples/man-portrait.jpg",
     bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...",
     socials: [
       { platform: "facebook", link: "https://facebook.com" },
@@ -55,7 +55,7 @@ const teamMembers = [
     name: "Bhavneet",
     position: "Director | COO | Product Designer",
     image:
-      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png",
+      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738003354/samples/man-portrait.jpg",
     bio: "A visionary individual with a background in Product and Industrial design A visionary individual with a background in Product and Industrial designA visionary individual with a background in Product and Industrial design...",
     socials: [
       { platform: "facebook", link: "https://facebook.com" },

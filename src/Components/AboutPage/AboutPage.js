@@ -24,15 +24,14 @@ const AboutPage = () => {
           />
         </div> */}
       <div className="about-text">
-        <h2>About Us</h2>
-        <p>
+        <h2>
           We provide complete wedding planning and designing solutions. Right
           from listening to your dreams & fantasies, to finding dreamland for
           it, and designing the space, creating and delivering invitations,
           managing logistics, to on-ground management, and hospitality,
           entertainment, to the final vow; we get everything sorted. And we
           assure class and luxury in our services.
-        </p>
+        </h2>
         {/* </div> */}
       </div>
 
