@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 20px;
+  /* gap: 20px; */
   padding: 40px 20px;
   width: 100%;
 }
@@ -13,7 +13,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  width: 300px;
+  width: 280px;
   transition: transform 0.3s ease-in-out;
 }
 
