@@ -14,7 +14,7 @@ const WeddingHome = () => {
       <div className="hero-content">
         <video autoPlay loop muted playsInline className="background-video">
           <source
-            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1739258470/ljkg5kdeeszt2ahqqbis.mp4"
+            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1739274293/ownwsbpabb54mh3kwary.mp4"
             type="video/mp4"
           />
         </video>
