@@ -30,12 +30,14 @@
   height: 100%;
   object-fit: cover;
 }
-
+/* .gallery-item:first-child {
+  grid-row: span 2;
+  height: 400px; 
+} */
 .gallery-item-wrapper.large {
   grid-column: span 2;
   grid-row: span 2;
   aspect-ratio: 8/9;
-  /* transform: scale(1.05); Optional: slightly scale it up */
 }
 
 .gallery-item-wrapper.medium {
