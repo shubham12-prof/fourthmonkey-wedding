@@ -12,12 +12,14 @@ const WeddingHome = () => {
   return (
     <div className="hero-section">
       <div className="hero-content">
-        <video autoPlay loop muted playsInline className="background-video">
+        <video autoPlay loop muted className="background-video">
           <source
-            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1739274293/ownwsbpabb54mh3kwary.mp4"
+            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1739300731/kbnm4x0zzulzl7yy974b.webm"
             type="video/mp4"
           />
+          Your browser does not support the video tag.
         </video>
+
         <div className="hero-content-wedding">
           <h2>We promise moon and stars, and we deliver them.</h2>
           <h1> Weddings by Fourth Munkey</h1>
