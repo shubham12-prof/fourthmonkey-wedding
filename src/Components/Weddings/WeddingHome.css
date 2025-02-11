@@ -38,7 +38,7 @@
 }
 
 .hero-content-wedding {
-  width: 65%;
+  width: 85%;
   text-align: left;
   z-index: 3;
   position: absolute;
@@ -46,12 +46,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  text-transform: uppercase;
 }
 
 .hero-content h2 {
-  font-weight: 400;
   margin-bottom: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .hero-content h2,
@@ -71,8 +71,8 @@ button {
   padding: 0.8rem 2rem;
   font-size: 1rem;
   border: none;
-  background-color: rgb(0, 0, 0);
-  color: rgb(254, 222, 0);
+  background-color: #f2c300;
+  color: rgb(8, 7, 0);
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
@@ -89,22 +89,22 @@ button {
   }
 
   .hero-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .hero-content a {
-    font-size: 0.7rem;
+    font-size: 1.3rem;
     padding: 0.7rem 1.8rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero-content h2 {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
 
   .hero-content a {
@@ -119,11 +119,11 @@ button {
   }
 
   .hero-content h2 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .hero-content a {
-    font-size: 0.4rem;
-    padding: 0.7rem 1.5rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.4rem;
   }
 }
