@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/fourthmonkey-wedding/static/css/main.ac8194df.css",
-    "main.js": "/fourthmonkey-wedding/static/js/main.ae550bab.js",
+    "main.css": "/fourthmonkey-wedding/static/css/main.ee438fe6.css",
+    "main.js": "/fourthmonkey-wedding/static/js/main.e04a5106.js",
     "static/css/30.e8fd72f1.chunk.css": "/fourthmonkey-wedding/static/css/30.e8fd72f1.chunk.css",
     "static/js/30.ea703261.chunk.js": "/fourthmonkey-wedding/static/js/30.ea703261.chunk.js",
-    "static/css/604.60793b76.chunk.css": "/fourthmonkey-wedding/static/css/604.60793b76.chunk.css",
-    "static/js/604.4e56c454.chunk.js": "/fourthmonkey-wedding/static/js/604.4e56c454.chunk.js",
+    "static/css/604.bf95d93a.chunk.css": "/fourthmonkey-wedding/static/css/604.bf95d93a.chunk.css",
+    "static/js/604.5fc0920f.chunk.js": "/fourthmonkey-wedding/static/js/604.5fc0920f.chunk.js",
     "static/css/661.d7bc31b5.chunk.css": "/fourthmonkey-wedding/static/css/661.d7bc31b5.chunk.css",
     "static/js/661.12fe66ef.chunk.js": "/fourthmonkey-wedding/static/js/661.12fe66ef.chunk.js",
     "static/css/489.ea66fef1.chunk.css": "/fourthmonkey-wedding/static/css/489.ea66fef1.chunk.css",
@@ -259,12 +259,12 @@
     "static/media/fa-v4compatibility.ttf": "/fourthmonkey-wedding/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/fourthmonkey-wedding/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/fourthmonkey-wedding/index.html",
-    "main.ac8194df.css.map": "/fourthmonkey-wedding/static/css/main.ac8194df.css.map",
-    "main.ae550bab.js.map": "/fourthmonkey-wedding/static/js/main.ae550bab.js.map",
+    "main.ee438fe6.css.map": "/fourthmonkey-wedding/static/css/main.ee438fe6.css.map",
+    "main.e04a5106.js.map": "/fourthmonkey-wedding/static/js/main.e04a5106.js.map",
     "30.e8fd72f1.chunk.css.map": "/fourthmonkey-wedding/static/css/30.e8fd72f1.chunk.css.map",
     "30.ea703261.chunk.js.map": "/fourthmonkey-wedding/static/js/30.ea703261.chunk.js.map",
-    "604.60793b76.chunk.css.map": "/fourthmonkey-wedding/static/css/604.60793b76.chunk.css.map",
-    "604.4e56c454.chunk.js.map": "/fourthmonkey-wedding/static/js/604.4e56c454.chunk.js.map",
+    "604.bf95d93a.chunk.css.map": "/fourthmonkey-wedding/static/css/604.bf95d93a.chunk.css.map",
+    "604.5fc0920f.chunk.js.map": "/fourthmonkey-wedding/static/js/604.5fc0920f.chunk.js.map",
     "661.d7bc31b5.chunk.css.map": "/fourthmonkey-wedding/static/css/661.d7bc31b5.chunk.css.map",
     "661.12fe66ef.chunk.js.map": "/fourthmonkey-wedding/static/js/661.12fe66ef.chunk.js.map",
     "489.ea66fef1.chunk.css.map": "/fourthmonkey-wedding/static/css/489.ea66fef1.chunk.css.map",
@@ -279,7 +279,7 @@
     "553.b3a399fd.chunk.js.map": "/fourthmonkey-wedding/static/js/553.b3a399fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac8194df.css",
-    "static/js/main.ae550bab.js"
+    "static/css/main.ee438fe6.css",
+    "static/js/main.e04a5106.js"
   ]
 }
