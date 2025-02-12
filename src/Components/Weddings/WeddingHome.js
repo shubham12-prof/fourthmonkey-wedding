@@ -6,6 +6,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import WeddingPlanning from "../WeddingPlanning/WeddingPlanning";
 import Contact from "../ContactUs/ContactForm";
 import Vow from "../VowSection/Vow";
+// import Portfolio from "../Portfolio/Portfolio";
 // import WeddingCover from "../../assets/weddingCover.jpg";
 
 const WeddingHome = () => {
@@ -33,6 +34,7 @@ const WeddingHome = () => {
       </div>
       <Vow />
       <AboutUs />
+      {/* <Portfolio /> */}
       <Hightlights />
       <WeddingPlanning />
       <Contact />
