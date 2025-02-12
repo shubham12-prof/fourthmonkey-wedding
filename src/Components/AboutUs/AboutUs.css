@@ -46,22 +46,27 @@
 }
 
 .know-more-button {
-  background-color: #ffffff;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 0px;
   font-size: clamp(12px, 1.5vw, 16px);
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 4px;
+  background-color: white;
+  text-transform: uppercase;
 }
 
-.know-more-button:hover {
-  background-color: #887676;
-}
-
-.know-more-button a {
+.know-more {
   color: #f2c300;
-  text-decoration: none;
+  padding: 10px 20px;
+}
+.know-more:hover {
+  color: #f2c300;
+  background-color: black;
+}
+.know-more-button :hover {
+  color: #f2c300;
+  background-color: black;
 }
 
 @media (max-width: 1024px) {

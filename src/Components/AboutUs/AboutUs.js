@@ -24,7 +24,9 @@ const AboutUs = () => {
           assure class and luxury in our services.
         </p>
         <button className="know-more-button">
-          <Link to="/AboutUs">Know More</Link>
+          <Link className="know-more" to="/AboutUs">
+            Know More
+          </Link>
         </button>
       </div>
     </div>

@@ -48,8 +48,12 @@ const Header = () => {
           </Link>
         </li>
         <li key="blog">
-          <Link to="/blog" onClick={handleLinkClick} className="link-style">
-            BLOG
+          <Link
+            to="/WeddingHome"
+            onClick={handleLinkClick}
+            className="link-style"
+          >
+            HOME
           </Link>
         </li>
       </ul>
