@@ -14,7 +14,7 @@ const WeddingHome = () => {
       <div className="hero-content">
         <video autoPlay loop muted className="background-video">
           <source
-            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1739300731/kbnm4x0zzulzl7yy974b.webm"
+            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1739343671/cuvvrvdxmkd9tocvmtqy.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
