@@ -87,7 +87,7 @@ const ButtonComponent = () => {
             </Link>
             <Link
               data-aos="fade-left"
-              to="/EntertainmentHome"
+              to="/NotFound"
               className="full-width-button"
               style={{ display: "flex", flexDirection: "column" }}
               onMouseEnter={() =>

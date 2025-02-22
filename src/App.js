@@ -4,6 +4,7 @@ import ScrollToTop from "./Common/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Images from "./Components/Gallary/Images";
+import NotFound from "./Components/NotFound/NotFound";
 
 const Home = lazy(() => import("./Components/Home/Home"));
 const WeddingHome = lazy(() => import("./Components/Weddings/WeddingHome"));
@@ -32,6 +33,7 @@ function App() {
           <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/AboutUs" element={<AboutPage />} />
           <Route path="/Images/:projectId" element={<Images />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </header>

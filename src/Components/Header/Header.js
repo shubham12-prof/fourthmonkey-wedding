@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShuffle } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,12 +34,12 @@ const Header = () => {
         <i className="fas fa-bars"></i>
       </div>
       <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <li key="about-us">
+        <li>
           <Link onClick={handleLinkClick} className="link-style" to="/AboutUs">
             ABOUT US
           </Link>
         </li>
-        <li key="portfolio">
+        <li>
           <Link
             to="/portfolio"
             onClick={handleLinkClick}
@@ -47,7 +48,7 @@ const Header = () => {
             PORTFOLIO
           </Link>
         </li>
-        <li key="blog">
+        <li>
           <Link
             to="/WeddingHome"
             onClick={handleLinkClick}
@@ -75,7 +76,7 @@ const Header = () => {
       </div>
       <div className="social-icons-header">
         <Link to="/" className="switch-icon-header">
-          Switch to FourthMOneky
+          <FontAwesomeIcon className="shuffle-icon" icon={faShuffle} />
         </Link>
       </div>
     </nav>
