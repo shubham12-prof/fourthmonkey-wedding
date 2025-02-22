@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import backgroundImage from "../../Images/Home.jpg";
-import Websvg from "../../Images/fourth-munky-weddings-floral.svg";
 import { motion } from "framer-motion";
 
 const ButtonComponent = () => {
   const [hoverBackgroundImage, setHoverBackgroundImage] = useState("");
 
-  useEffect(() => {
-    const images = [
-      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg",
-      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg",
-      "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738587314/izrv2pdz9iy9x9vfwykn.jpg",
-      Websvg,
-    ];
-    images.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, []);
+  // useEffect(() => {
+  //   const images = [
+  //     "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg",
+  //     "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg",
+  //     "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738587314/izrv2pdz9iy9x9vfwykn.jpg",
+  //     "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738568163/heelourbhu4c0t3ijrch.png",
+  //   ];
+  //   images.forEach((src) => {
+  //     const img = new Image();
+  //     img.src = src;
+  //   });
+  // }, []);
 
   const handleMouseEnter = (image) => {
     setHoverBackgroundImage(image);

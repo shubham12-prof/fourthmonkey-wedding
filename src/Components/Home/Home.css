@@ -3,8 +3,6 @@
   width: 0;
   height: 0;
   overflow: hidden;
-  background-image: url("../../Images/Wedding.jpg"),
-    url("../../Images/Entertainment.jpg");
   visibility: hidden;
 }
 .page-container {
