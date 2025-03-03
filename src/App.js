@@ -8,7 +8,7 @@ import NotFound from "./Components/NotFound/NotFound";
 
 const Home = lazy(() => import("./Components/Home/Home"));
 const WeddingHome = lazy(() => import("./Components/Weddings/WeddingHome"));
-const Header = lazy(() => import("./Components/Header/Header"));
+const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Footer = lazy(() => import("./Components/Footer/Footer"));
 const Portfolio = lazy(() => import("./Components/Portfolio/Portfolio"));
 const AboutPage = lazy(() => import("./Components/AboutPage/AboutPage"));
@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <ScrollToTop />
       <header className="App-header">
-        {location.pathname !== "/" && <Header />}
+        {location.pathname !== "/" && <Navbar />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/WeddingHome" element={<WeddingHome />} />
