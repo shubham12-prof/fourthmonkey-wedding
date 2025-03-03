@@ -1,5 +1,4 @@
 import React from "react";
-// import { Helmet } from "react-helmet";
 import "./AboutPage.css";
 import TeamSection from "./TeamSection/TeamSection";
 import { Link } from "react-router-dom";
@@ -7,23 +6,6 @@ import { Link } from "react-router-dom";
 const AboutPage = () => {
   return (
     <div className="about-container">
-      {/* <Helmet>
-        <link
-          rel="preload"
-          as="image"
-          href="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png"
-          type="image/jpeg"
-        />
-      </Helmet> */}
-
-      {/* <div className="about-content"> */}
-      {/* <div className="about-image">
-          <img
-            className="about-svg-image"
-            src="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_80,h_80/v1738242677/p9x32n7xaw3pkt7ufdff.png"
-            alt="About Us"
-          />
-        </div> */}
       <div className="about-text">
         <h2>
           We provide complete wedding planning and designing solutions. Right
@@ -33,7 +15,6 @@ const AboutPage = () => {
           entertainment, to the final vow; we get everything sorted. And we
           assure class and luxury in our services.
         </h2>
-        {/* </div> */}
       </div>
 
       <section className="wedding-decor">

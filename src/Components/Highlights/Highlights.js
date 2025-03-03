@@ -10,9 +10,6 @@ const images = [
 function ImageBox() {
   return (
     <div className="container">
-      {/* <h3>
-          Take time to see our previous weddings to understand …………………………
-        </h3> */}
       <h2 className="header">HIGHLIGHTS</h2>
       <div data-aos="zoom-in" className="image-box">
         {images.map((src, index) => (

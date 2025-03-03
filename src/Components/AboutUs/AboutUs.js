@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import { Link } from "react-router-dom";
-// import AboutPage from "../../assets/aboutcover.JPG";
+
 const AboutUs = () => {
   return (
     <div style={{ marginTop: "2rem" }} className="about-us-container">

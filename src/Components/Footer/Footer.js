@@ -31,16 +31,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* <div className="footer-section">
-          <h4>QUICK LINKS</h4>
-          <ul className="footer-links">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-          </ul>
-        </div> */}
-
         <div className="footer-section">
           <h4>SOCIAL</h4>
           <div className="social-icons">
