@@ -21,11 +21,12 @@
 }
 
 .text-section {
-  flex: 1;
-  height: 546px;
+  flex: 1 1;
+  height: 432px;
   max-width: 100%;
   background-color: #f2c300;
   box-sizing: border-box;
+  text-align: -webkit-center;
 }
 
 .text-section h2 {

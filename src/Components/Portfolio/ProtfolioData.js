@@ -17,7 +17,7 @@ export const projects = [
   {
     id: 1,
     title: "Sanchit + aishwarya",
-    description: "Your wedding day should be magical.",
+    description: "DEHRADUN || 2023",
     imageUrl: `${cloudinaryBaseURL}hurt4rpfreppsmsjvdd5.jpg`,
     galleryImages: Object.entries(images)
       .filter(
@@ -32,7 +32,7 @@ export const projects = [
   {
     id: 2,
     title: "Bhavneet + Ritvika",
-    description: "A day filled with joy and laughter.",
+    description: "DEHRADUN || 2023",
     imageUrl: `${cloudinaryBaseURL}wnvfdaizzfwh25ewnghx.jpg`,
     galleryImages: Object.entries(images)
       .filter(
@@ -49,7 +49,7 @@ export const projects = [
   {
     id: 3,
     title: "Bharti + Rishab",
-    description: "A day filled with joy and laughter.",
+    description: "DEHRADUN || 2023",
     imageUrl: `${cloudinaryBaseURL}txymycibydzslg2cbscg.jpg`,
     galleryImages: Object.entries(images)
       .filter(
@@ -67,7 +67,7 @@ export const projects = [
   {
     id: 4,
     title: "Dheeraj + Ananya",
-    description: "A celebration of love and togetherness.",
+    description: "DEHRADUN || 2023",
     imageUrl: `${cloudinaryBaseURL}yynr0zqsnkyyy1ldepx0.jpg`,
     galleryImages: Object.entries(images)
       .filter(
@@ -83,7 +83,7 @@ export const projects = [
   {
     id: 5,
     title: "Tanvi + Aman",
-    description: "A day filled with joy and laughter.",
+    description: "DEHRADUN || 2023",
     imageUrl: `${cloudinaryBaseURL}z4qn0uqrpmefibcflwi8.jpg`,
     galleryImages: Object.entries(images)
       .filter(

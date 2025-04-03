@@ -23,11 +23,11 @@ const AboutUs = () => {
           entertainment, to the final vow; we get everything sorted. And we
           assure class and luxury in our services.
         </p>
-        <button className="know-more-button">
+        {/* <button className="know-more-button">
           <Link className="know-more" to="/AboutUs">
             Know More
           </Link>
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import WeddingPlanning from "../WeddingPlanning/WeddingPlanning";
 import Contact from "../ContactUs/ContactForm";
 import Vow from "../VowSection/Vow";
-
+import "../AboutPage/AboutPage.css";
 const WeddingHome = () => {
   return (
     <div className="hero-section">
@@ -19,7 +19,7 @@ const WeddingHome = () => {
         </video>
         <div className="hero-content-wedding">
           <h2>We promise moon and stars, and we deliver them.</h2>
-          <h1> Weddings by Fourth Munkey</h1>
+          <h1> Weddings by Fourth Munky</h1>
           <a
             href="https://wa.me/7417065899?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20free%20consultation%20for%20wedding%20planning."
             target="_blank"
@@ -34,6 +34,20 @@ const WeddingHome = () => {
       <AboutUs />
       <Hightlights />
       <WeddingPlanning />
+      <section className="testimonials">
+        <h2>Testimonials</h2>
+        <h2>Fourth Munky Entertainment</h2>
+        <p>
+          Where Passion Meets Performance At Fourth Munky Live,
+          <br></br>
+          <span>
+            we take your events beyond imagination. From conceptualization to
+            flawless execution, we bring unparalleled energy, ideas, and
+            technology to every experience. “We do events because we can't
+            imagine life without them.”
+          </span>
+        </p>
+      </section>
       <Contact />
     </div>
   );
