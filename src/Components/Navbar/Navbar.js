@@ -41,11 +41,11 @@ const Header = () => {
         </li>
         <li>
           <Link
-            to="/portfolio"
+            to="/ContactForm"
             onClick={handleLinkClick}
             className="link-style"
           >
-            PORTFOLIO
+            CONNECT
           </Link>
         </li>
         <li>

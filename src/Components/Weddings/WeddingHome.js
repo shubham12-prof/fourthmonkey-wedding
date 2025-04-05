@@ -7,6 +7,7 @@ import WeddingPlanning from "../WeddingPlanning/WeddingPlanning";
 import Contact from "../ContactUs/ContactForm";
 import Vow from "../VowSection/Vow";
 import "../AboutPage/AboutPage.css";
+import Portfolio from "../Portfolio/Portfolio";
 const WeddingHome = () => {
   return (
     <div className="hero-section">
@@ -32,8 +33,9 @@ const WeddingHome = () => {
       </div>
       <Vow />
       <AboutUs />
-      <Hightlights />
+      {/* <Hightlights /> */}
       <WeddingPlanning />
+      <Portfolio />
       <section className="testimonials">
         <h2>Testimonials</h2>
         <h2>Fourth Munky Entertainment</h2>

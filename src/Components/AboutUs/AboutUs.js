@@ -9,7 +9,7 @@ const AboutUs = () => {
         <img
           className="aboutus-image"
           data-aos="fade-right"
-          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738334064/pkycpvd9vqk6i0aaysfq.webp"
+          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1743842784/ct5waas7w2zzrfblbjh9.jpg"
           alt="about-image"
         />
       </div>

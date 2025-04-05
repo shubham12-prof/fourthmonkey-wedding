@@ -1,11 +1,12 @@
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 .contact-left {
@@ -13,7 +14,7 @@
   flex-direction: column;
   width: 35%;
   display: flex;
-  background-color: #f2c300;
+  /* background-color: #f2c300; */
   padding: 20px;
   border-radius: 8px;
 }
@@ -22,14 +23,14 @@
 .contact-right h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: white;
+  color: #f2c300;
   font-style: normal;
 }
 
 .contact-left p {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
 
 .social-icon {
@@ -40,7 +41,7 @@
 }
 
 .social-icon a {
-  color: #fff5f5;
+  color: #f2c300;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -57,7 +58,7 @@
 
 .contact-right {
   /* width: 60%; */
-  background-color: #f2c300;
+  /* background-color: #f2c300; */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

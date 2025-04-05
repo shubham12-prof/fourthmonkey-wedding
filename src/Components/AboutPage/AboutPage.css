@@ -1,7 +1,15 @@
 .about-container {
-  width: 100%;
+  position: relative;
   overflow: hidden;
-  margin-top: 3rem;
+}
+
+.about-bg-img {
+  /* position: fixed; */
+  margin-top: 5rem;
+  width: 100vw;
+  /* height: 70vh; */
+  /* object-fit: cover; */
+  /* z-index: -1; */
 }
 
 .about-background-image {
@@ -40,11 +48,12 @@
 }
 
 .about-text h2 {
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 400;
   /* color: #fede00; */
   margin: 1rem auto;
-  width: 60%;
+  width: 89%;
+  font-style: italic;
   max-width: 800;
 }
 
@@ -61,7 +70,7 @@
 .who-we-are h2,
 .testimonials h2,
 .entertainment-services h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #f2c300;
   margin: 1rem auto;
@@ -73,12 +82,14 @@
 .about-text p,
 .who-we-are p,
 .testimonials p {
-  font-size: 1.5em;
-  font-weight: 300;
-  color: #000000;
+  font-size: 1.1em;
+  font-weight: 400;
+  /* color: #fede00; */
   margin: 1rem auto;
-  width: 75%;
+  width: 89%;
+  font-style: italic;
   max-width: 800;
+  color: black;
 }
 
 .entertainment-services ul {

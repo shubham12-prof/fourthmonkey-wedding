@@ -7,26 +7,26 @@
 }
 
 .vow-section h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   color: #f2c300;
   text-transform: uppercase;
 }
 .vow-section h2 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-top: 2rem;
   font-weight: 300;
   color: #f2c300;
 }
 .vow-section p {
-  font-size: 1.45rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   margin-top: 0px auto;
   color: #000000;
   max-width: 1020px;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .vow-section h3 {
     font-size: 2rem;
   }
@@ -44,7 +44,7 @@
     margin-top: 0px auto;
     max-width: 1020px;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .vow-section {

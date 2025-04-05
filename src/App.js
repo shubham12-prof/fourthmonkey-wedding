@@ -12,6 +12,8 @@ const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Footer = lazy(() => import("./Components/Footer/Footer"));
 const Portfolio = lazy(() => import("./Components/Portfolio/Portfolio"));
 const AboutPage = lazy(() => import("./Components/AboutPage/AboutPage"));
+
+const ContactForm = lazy(() => import("./Components/ContactUs/ContactForm"));
 function App() {
   const location = useLocation();
 
@@ -32,6 +34,7 @@ function App() {
           <Route path="/WeddingHome" element={<WeddingHome />} />
           <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/AboutUs" element={<AboutPage />} />
+          <Route path="/ContactForm" element={<ContactForm />} />
           <Route path="/Images/:projectId" element={<Images />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

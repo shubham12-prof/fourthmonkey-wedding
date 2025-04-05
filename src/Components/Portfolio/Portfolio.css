@@ -38,7 +38,7 @@
   font-family: alegreya;
   font-weight: 400;
   font-style: italic;
-  font-size: 27px;
+  font-size: 1.4rem;
   letter-spacing: 0.01em;
   line-height: 1.3em;
   text-decoration: none;
@@ -55,7 +55,7 @@
 
 .card-link {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 2rem;
   width: 100%;
   justify-content: center;
@@ -115,6 +115,9 @@
 }
 
 @media (max-width: 480px) {
+  .portfolio-container {
+    width: 90%;
+  }
   .header-text h1 {
     font-size: 1.3rem;
   }
