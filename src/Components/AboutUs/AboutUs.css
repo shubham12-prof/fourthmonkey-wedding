@@ -3,134 +3,133 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: gray;
+  margin: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
   box-sizing: border-box;
-  background-color: grey;
-  margin: 1rem;
 }
 
 .image-section {
   flex: 1;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 .aboutus-image {
   width: 100%;
-  max-width: 600px;
-  height: 500px;
+  height: auto;
+  max-height: 450px;
   object-fit: cover;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .text-section {
-  flex: 1 1;
-  height: 432px;
+  flex: 1;
   max-width: 100%;
-  background-color: #f2c300;
+  padding: 4rem;
+  text-align: center;
   box-sizing: border-box;
-  text-align: -webkit-center;
 }
 
 .text-section h2 {
-  /* font-size: clamp(18px, 3vw, 28px); */
+  font-size: 2.2rem;
   font-weight: bold;
-  color: #ffffff;
-  /* margin-bottom: 20px; */
-  font-size: 2rem;
+  color: #f2c300;
+  margin-bottom: 1rem;
 }
 
 .text-section p {
-  /* font-size: clamp(14px, 2vw, 18px); */
-  color: #ffffff;
+  color: #000000;
   line-height: 1.9;
-  margin: 3rem 3rem 1rem 3rem;
   font-size: 1.1rem;
   max-width: 600px;
+  margin: 0 auto;
   font-style: italic;
 }
 
 .know-more-button {
   border: none;
-  padding: 8px 0px;
-  font-size: clamp(12px, 1.5vw, 16px);
+  padding: 10px 20px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   border-radius: 4px;
   background-color: white;
   text-transform: uppercase;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
 }
 
 .know-more {
   color: #f2c300;
-  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
 }
+
+.know-more-button:hover,
 .know-more:hover {
-  color: #f2c300;
   background-color: black;
-}
-.know-more-button :hover {
   color: #f2c300;
-  background-color: black;
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .about-us-container {
-    padding: 1rem 5%;
-  }
-
-  .text-section h2 {
-    font-size: clamp(38px, 2.5vw, 30px);
-  }
-
-  .text-section p {
-    font-size: clamp(18px, 2vw, 18px);
-  }
-
-  .know-more-button {
-    padding: 8px 16px;
-  }
-} */
-
-@media (max-width: 868px) {
-  .about-us-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
   }
 
   .image-section,
   .text-section {
-    max-width: 90%;
+    max-width: 100%;
+  }
+
+  .aboutus-image {
+    padding: 10px;
+    max-height: 400px;
+  }
+
+  .text-section {
+    padding: 2rem 1rem;
   }
 
   .text-section h2 {
-    font-size: clamp(16px, 3vw, 20px);
+    font-size: 1.8rem;
   }
 
   .text-section p {
-    font-size: clamp(17px, 2vw, 14px);
-  }
-
-  .know-more-button {
-    font-size: clamp(12px, 2vw, 14px);
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .about-us-container {
-    padding: 0px 3%;
-    gap: 20px;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .aboutus-image {
+    height: auto;
+    width: 100%;
+    max-height: 300px;
+    padding: 10px;
+  }
+
+  .text-section {
+    padding: 1.5rem 1rem;
   }
 
   .text-section h2 {
-    font-size: clamp(14px, 4vw, 18px);
+    font-size: 1.5rem;
   }
 
   .text-section p {
-    font-size: clamp(16px, 3vw, 14px);
-    margin: 0;
+    font-size: 0.95rem;
+    padding: 0;
   }
 
   .know-more-button {
-    padding: 6px 12px;
-    font-size: clamp(11px, 3vw, 13px);
-    margin-bottom: 1rem;
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }

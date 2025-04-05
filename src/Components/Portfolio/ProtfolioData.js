@@ -98,4 +98,28 @@ export const projects = [
         thumbnail: value,
       })),
   },
+  {
+    id: 6,
+    title: "Abhishek + Rashmi",
+    description: "DEHRADUN || 2023",
+    imageUrl: `${cloudinaryBaseURL}q5ogucjputb9fv0sixc6.jpg`,
+    galleryImages: Object.entries(images)
+      .filter(([key]) => key.startsWith("AbhishekandRashmi/Haldi/"))
+      .map(([_, value]) => ({
+        original: value,
+        thumbnail: value,
+      })),
+  },
+  {
+    id: 7,
+    title: "Vidhi + Prateek",
+    description: "DEHRADUN || 2023",
+    imageUrl: `${cloudinaryBaseURL}dc5wrxkdaoqrfjuqtf5b.jpg`,
+    galleryImages: Object.entries(images)
+      .filter(([key]) => key.startsWith("VidhiaurPrateek/Haldi/"))
+      .map(([_, value]) => ({
+        original: value,
+        thumbnail: value,
+      })),
+  },
 ];
