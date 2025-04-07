@@ -15,6 +15,7 @@ const AboutPage = () => {
           entertainment, to the final vow; we get everything sorted. And we
           assure class and luxury in our services.
         </p>
+        <h1>OUR STORY</h1>
         <img
           className="about-bg-img"
           src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1743843117/abrkeihpwmyyvyrlhrba.png"

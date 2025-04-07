@@ -11,6 +11,16 @@
   margin-top: 4rem;
   /* width: 100%; */
 }
+.card-image-portfolio {
+  object-fit: cover;
+  width: 100%;
+}
+
+.lazy-load-image-background.blur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .header-text {
   font-family: Alegreya;

@@ -26,6 +26,7 @@ const WeddingPlanning = () => {
 
   return (
     <div className="wedding-planning-container">
+      <h1>OUR SERVICES</h1>
       {services.map((service, index) => (
         <div key={index} className="card">
           <div className="icon">{service.icon}</div>
