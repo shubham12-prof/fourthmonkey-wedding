@@ -33,7 +33,7 @@ const AboutPage = () => {
         <p>
           We are highly considerate human beings, united to bring happiness in
           the faces of others by fulfilling their wishes. We started bringing
-          happiness from the year 2015, and are regularly working hard every day
+          happiness from the year 2018, and are regularly working hard every day
           to see happy faces around us. We are proud to be a part of the
           incredible event stories. The stories are written by the ink of
           dreams, fantasies, imaginations, hard-work and perfection. Our

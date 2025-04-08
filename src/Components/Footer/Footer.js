@@ -22,7 +22,7 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>VISIT US</h4>
-          <p>561, INDIRA NAAR Colony, Dehradun- 248001</p>
+          <p>Address :- 36, Phase 2. Engineers Enclave, GMS Road, Dehradun</p>
           <p>
             <strong>Phone:</strong> +91 7247889013
           </p>

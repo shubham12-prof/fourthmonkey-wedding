@@ -15,7 +15,7 @@ const AboutUs = () => {
       </div>
       <div className="text-section">
         <h2>WHAT WE DO</h2>
-        <p data-aos="fade-left">
+        <p style={{ marginTop: "3rem" }} data-aos="fade-left">
           We provide complete wedding planning and designing solutions. Right
           from listening to your dreams & fantasies, to finding dreamland for
           it, and designing the space, creating and delivering invitations,

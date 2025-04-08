@@ -36,7 +36,7 @@ const WeddingHome = () => {
       {/* <Hightlights /> */}
       <WeddingPlanning />
       <Portfolio />
-      <section
+      {/* <section
         style={{ color: "black", margin: "0px 100px" }}
         className="testimonials"
       >
@@ -54,7 +54,7 @@ const WeddingHome = () => {
             imagine life without them.”
           </span>
         </p>
-      </section>
+      </section> */}
       <Contact />
     </div>
   );

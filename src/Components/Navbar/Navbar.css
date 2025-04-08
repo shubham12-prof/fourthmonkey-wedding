@@ -17,7 +17,7 @@
 }
 
 .link-style {
-  color: #ffffff;
+  color: #898888;
   text-decoration: none;
   font-weight: 400;
   transition: color 0.3s;
@@ -31,7 +31,7 @@
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: #f2c300;
+  color: #898888;
 }
 
 .svg-icon-header {
@@ -60,7 +60,7 @@
   transition: background-color 0.3s ease;
 }
 .shuffle-icon {
-  color: #ffffff;
+  color: #898888;
   font-size: 1.5rem;
 }
 @media (max-width: 768px) {
