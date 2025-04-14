@@ -1,7 +1,6 @@
 import React from "react";
 import "./WeddingHome.css";
 import "aos/dist/aos.css";
-import Hightlights from "../Highlights/Highlights";
 import AboutUs from "../AboutUs/AboutUs";
 import WeddingPlanning from "../WeddingPlanning/WeddingPlanning";
 import Contact from "../ContactUs/ContactForm";
@@ -14,7 +13,7 @@ const WeddingHome = () => {
       <div className="hero-content">
         <video autoPlay loop muted playsInline className="background-video">
           <source
-            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1744056248/l0fjilghhypu0qrlymoc.mp4"
+            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1739343671/cuvvrvdxmkd9tocvmtqy.mp4"
             type="video/mp4"
           />
         </video>

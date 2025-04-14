@@ -17,7 +17,7 @@
 }
 
 .link-style {
-  color: #898888;
+  color: #f2c300;
   text-decoration: none;
   font-weight: 400;
   transition: color 0.3s;
@@ -60,7 +60,7 @@
   transition: background-color 0.3s ease;
 }
 .shuffle-icon {
-  color: #898888;
+  color: #f2c300;
   font-size: 1.5rem;
 }
 @media (max-width: 768px) {
