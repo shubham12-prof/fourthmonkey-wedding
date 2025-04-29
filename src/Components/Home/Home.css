@@ -73,11 +73,12 @@
 .svg-icon-container-home {
   position: absolute;
   margin: 1rem 2rem;
+  z-index: 20;
 }
 .span-subtitle {
-  font-size: "18px";
-  margin-bottom: "1rem";
-  font-style: "oblique";
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  font-style: oblique;
 }
 @media (min-width: 768px) {
   .button-container {

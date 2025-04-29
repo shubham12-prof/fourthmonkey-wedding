@@ -1,10 +1,48 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Home.css";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import "./Home.css";
 
-const ButtonComponent = () => {
+const Home = () => {
+  const location = useLocation();
   const [hoverBackgroundImage, setHoverBackgroundImage] = useState("");
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+
+  const weddingImage = "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg";
+  const entertainmentImage = "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg";
+
+
+  useEffect(() => {
+    const preloadImages = async () => {
+      try {
+        const imagePromises = [weddingImage, entertainmentImage].map(src => {
+          return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.onload = () => resolve(src);
+            img.onerror = reject;
+            img.src = src;
+          });
+        });
+
+        await Promise.all(imagePromises);
+
+        setImagesLoaded(true);
+      } catch (error) {
+
+        setImagesLoaded(true);
+      }
+    };
+
+    preloadImages();
+    return () => {
+      setHoverBackgroundImage("");
+    };
+  }, []);
+
+  useEffect(() => {
+    setHoverBackgroundImage("");
+  }, [location.pathname]);
 
   const handleMouseEnter = (image) => {
     setHoverBackgroundImage(image);
@@ -26,14 +64,19 @@ const ButtonComponent = () => {
       <div
         className="background-container"
         style={{
-          backgroundImage: hoverBackgroundImage
-            ? `url(${hoverBackgroundImage})`
-            : "none",
+          backgroundImage: hoverBackgroundImage ? `url(${hoverBackgroundImage})` : "none",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <video autoPlay loop muted playsInline className="background-video">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="background-video"
+          style={{ opacity: hoverBackgroundImage ? 0 : 1 }}
+        >
           <source
             src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1744056248/l0fjilghhypu0qrlymoc.mp4"
             type="video/mp4"
@@ -61,11 +104,7 @@ const ButtonComponent = () => {
               data-aos="fade-right"
               to="/WeddingHome"
               className="full-width-button"
-              onMouseEnter={() =>
-                handleMouseEnter(
-                  "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg"
-                )
-              }
+              onMouseEnter={() => handleMouseEnter(weddingImage)}
               onMouseLeave={handleMouseLeave}
             >
               <span className="span-subtitle">DISCOVER</span>
@@ -77,11 +116,7 @@ const ButtonComponent = () => {
               data-aos="fade-left"
               to="/NotFound"
               className="full-width-button"
-              onMouseEnter={() =>
-                handleMouseEnter(
-                  "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg"
-                )
-              }
+              onMouseEnter={() => handleMouseEnter(entertainmentImage)}
               onMouseLeave={handleMouseLeave}
             >
               <span className="span-subtitle">EXPLORE</span>
@@ -95,4 +130,4 @@ const ButtonComponent = () => {
   );
 };
 
-export default ButtonComponent;
+export default Home;

@@ -1,108 +1,140 @@
 .gallery-container {
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
   margin-top: 6rem;
-  max-width: 1400px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+}
+
+.gallery-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.yellow-line {
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ffcc00;
+  margin: 0.5rem auto 2rem;
+  border-radius: 2px;
 }
 
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.3s forwards;
 }
 
 .gallery-item-wrapper {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .gallery-item-wrapper:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .gallery-item {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item-wrapper:hover .gallery-item {
+  transform: scale(1.05);
 }
 
 .gallery-item-wrapper.large {
   grid-column: span 2;
   grid-row: span 2;
-  aspect-ratio: 8/9;
 }
 
-.gallery-container h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease-out forwards;
-  margin-bottom: 20px;
-  display: inline-block;
-  text-align: left;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (min-width: 600px) {
-  .grid-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
+@media (max-width: 480px) {
+  .gallery-container {
+    padding: 1rem;
+    margin-top: 4rem;
   }
 
   .gallery-container h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 
   .gallery-item-wrapper.large {
     grid-column: span 2;
     grid-row: span 1;
-    aspect-ratio: 8/9;
-    margin-bottom: 0;
   }
 }
 
-@media (min-width: 900px) {
-  .grid-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-
-  .gallery-item-wrapper.large {
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .grid-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-
+@media (min-width: 481px) and (max-width: 768px) {
   .gallery-container h1 {
-    font-size: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .grid-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 
   .gallery-item-wrapper.large {
     grid-column: span 2;
-    grid-row: span 1;
-    aspect-ratio: 8/9;
-    margin-bottom: 0;
+    grid-row: span 2;
   }
 }
-@media (min-width: 1440px) {
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .grid-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .gallery-item-wrapper.large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .grid-gallery {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+  }
+
+  .gallery-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .gallery-item-wrapper.large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 1441px) {
+  .grid-gallery {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
   }
 
   .gallery-container h1 {
@@ -112,7 +144,18 @@
   .gallery-item-wrapper.large {
     grid-column: span 3;
     grid-row: span 2;
-    aspect-ratio: 8/9.5;
-    margin-bottom: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }

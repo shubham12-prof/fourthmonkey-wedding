@@ -26,12 +26,10 @@ const Images = () => {
               alt={`Gallery image ${index + 1}`}
               src={image.original}
               effect="blur"
-              className={`gallery-item ${isLarge ? "large" : ""} item-${
-                index + 1
-              }`}
-              wrapperClassName={`gallery-item-wrapper ${
-                isLarge ? "large" : ""
-              }`}
+              className={`gallery-item ${isLarge ? "large" : ""} item-${index + 1
+                }`}
+              wrapperClassName={`gallery-item-wrapper ${isLarge ? "large" : ""
+                }`}
             />
           );
         })}

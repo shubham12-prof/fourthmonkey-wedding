@@ -73,11 +73,9 @@ const Header = () => {
           </picture>
         </Link>
       </div>
-      <div className="social-icons-header">
-        <Link to="/" className="switch-icon-header">
-          <FontAwesomeIcon className="shuffle-icon" icon={faShuffle} />
-        </Link>
-      </div>
+      <Link to="/" className="switch-icon-header">
+        <FontAwesomeIcon className="shuffle-icon" icon={faShuffle} />
+      </Link>
     </nav>
   );
 };

@@ -50,6 +50,7 @@
 }
 
 .know-more-button {
+  display: inline-block;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -59,16 +60,12 @@
   text-transform: uppercase;
   margin-top: 2rem;
   transition: all 0.3s ease;
-}
-
-.know-more {
+  font-weight: bold;
   color: #f2c300;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.know-more-button:hover,
-.know-more:hover {
+.know-more-button:hover {
   background-color: black;
   color: #f2c300;
 }
