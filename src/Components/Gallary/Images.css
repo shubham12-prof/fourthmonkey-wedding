@@ -1,18 +1,16 @@
 .gallery-container {
-  text-align: center;
-  padding: 2rem;
-  margin-top: 6rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-item-wrapper.loaded {
+  background-color: transparent;
 }
 
 .gallery-container h1 {
   font-size: 2rem;
   font-weight: 700;
   color: #333;
-  margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -20,10 +18,9 @@
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease-out forwards;
 }
-
 .yellow-line {
   display: block;
-  width: 60px;
+  width: auto;
   height: 4px;
   background-color: #ffcc00;
   margin: 0.5rem auto 2rem;
@@ -32,17 +29,14 @@
 
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 12px;
-  opacity: 0;
-  animation: fadeIn 1s ease-out 0.3s forwards;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
 .gallery-item-wrapper {
-  position: relative;
+  width: 100%;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: #f2c300;
 }
 
 .gallery-item-wrapper:hover {
@@ -60,8 +54,7 @@
 .gallery-item-wrapper:hover .gallery-item {
   transform: scale(1.05);
 }
-
-.gallery-item-wrapper.large {
+.gallery-item.large {
   grid-column: span 2;
   grid-row: span 2;
 }
