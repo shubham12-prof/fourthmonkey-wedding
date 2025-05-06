@@ -116,7 +116,7 @@ export const projects = [
     description: "DEHRADUN || 2023",
     imageUrl: `${cloudinaryBaseURL}dc5wrxkdaoqrfjuqtf5b.jpg`,
     galleryImages: Object.entries(images)
-      .filter(([key]) => key.startsWith("VidhiaurPrateek/Haldi/"))
+      .filter(([key]) => key.startsWith("VidhiaurPrateek/haldi/"))
       .map(([_, value]) => ({
         original: value,
         thumbnail: value,
