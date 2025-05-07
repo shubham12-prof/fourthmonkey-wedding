@@ -9,10 +9,30 @@ const Images = () => {
   const { projectId } = useParams();
   const project = projects.find((proj) => proj.id === parseInt(projectId));
   const [sortedImages, setSortedImages] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (project) {
-      setSortedImages(project.galleryImages);
+    if (project && project.galleryImages.length > 0) {
+      const imagesToLoad = project.galleryImages.length;
+      let loadedCount = 0;
+      project.galleryImages.forEach((image) => {
+        const img = new Image();
+        img.src = image.original;
+        img.onload = () => {
+          loadedCount++;
+          if (loadedCount === imagesToLoad) {
+            setSortedImages(project.galleryImages);
+            setLoading(false);
+          }
+        };
+        img.onerror = () => {
+          loadedCount++;
+          if (loadedCount === imagesToLoad) {
+            setSortedImages(project.galleryImages);
+            setLoading(false);
+          }
+        };
+      });
     }
   }, [project]);
 
@@ -23,26 +43,26 @@ const Images = () => {
       <h1>
         {project.title} Gallery <span className="yellow-line"></span>
       </h1>
-      <h1>{project.galleryTitle}</h1>
 
-      <div className="grid-gallery">
-        {sortedImages.map((image, index) => {
-          const isLarge = index === 0;
-
-          return (
-            <LazyLoadImage
-              key={index}
-              alt={`Gallery image ${index + 1}`}
-              src={image.original}
-              placeholderSrc={image.original}
-              effect="blur"
-              className={`gallery-item ${isLarge ? "large" : ""} item-${index + 1}`}
-              wrapperClassName={`gallery-item-wrapper ${isLarge ? "large" : ""}`}
-              loading="lazy"
-            />
-          );
-        })}
-      </div>
+      {loading ? (
+        <div className="loading-indicator">Loading gallery...</div>
+      ) : (
+        <div className="grid-gallery">
+          {sortedImages.map((image, index) => {
+            const isLarge = index === 0;
+            return (
+              <LazyLoadImage
+                key={index}
+                alt={`Gallery image ${index + 1}`}
+                src={image.original}
+                effect="blur"
+                className={`gallery-item ${isLarge ? "large" : ""} item-${index + 1}`}
+                wrapperClassName={`gallery-item-wrapper ${isLarge ? "large" : ""}`}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };
