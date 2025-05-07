@@ -13,28 +13,13 @@ const Images = () => {
 
   useEffect(() => {
     if (project && project.galleryImages.length > 0) {
-      const imagesToLoad = project.galleryImages.length;
-      let loadedCount = 0;
-      project.galleryImages.forEach((image) => {
-        const img = new Image();
-        img.src = image.original;
-        img.onload = () => {
-          loadedCount++;
-          if (loadedCount === imagesToLoad) {
-            setSortedImages(project.galleryImages);
-            setLoading(false);
-          }
-        };
-        img.onerror = () => {
-          loadedCount++;
-          if (loadedCount === imagesToLoad) {
-            setSortedImages(project.galleryImages);
-            setLoading(false);
-          }
-        };
-      });
+      setSortedImages(project.galleryImages);
     }
   }, [project]);
+
+  const handleFirstImageLoad = () => {
+    setLoading(false);
+  };
 
   if (!project) return <p>Project not found</p>;
 
@@ -46,23 +31,24 @@ const Images = () => {
 
       {loading ? (
         <div className="loading-indicator">Loading gallery...</div>
-      ) : (
-        <div className="grid-gallery">
-          {sortedImages.map((image, index) => {
-            const isLarge = index === 0;
-            return (
-              <LazyLoadImage
-                key={index}
-                alt={`Gallery image ${index + 1}`}
-                src={image.original}
-                effect="blur"
-                className={`gallery-item ${isLarge ? "large" : ""} item-${index + 1}`}
-                wrapperClassName={`gallery-item-wrapper ${isLarge ? "large" : ""}`}
-              />
-            );
-          })}
-        </div>
-      )}
+      ) : null}
+
+      <div className={`grid-gallery ${loading ? "hidden" : ""}`}>
+        {sortedImages.map((image, index) => {
+          const isLarge = index === 0;
+          return (
+            <LazyLoadImage
+              key={index}
+              alt={`Gallery image ${index + 1}`}
+              src={image.original}
+              effect="blur"
+              onLoad={index === 0 ? handleFirstImageLoad : undefined}
+              className={`gallery-item ${isLarge ? "large" : ""} item-${index + 1}`}
+              wrapperClassName={`gallery-item-wrapper ${isLarge ? "large" : ""}`}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

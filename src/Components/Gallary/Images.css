@@ -65,21 +65,34 @@
   grid-row: span 2;
 }
 .loading-indicator {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 3rem;
-  color: #7f6910;
-  animation: fade 1s infinite alternate;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #fff6e0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.3;
-  }
+.loading-indicator::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(127, 105, 16, 0.3);
+  border-top-color: #7f6910;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
   to {
-    opacity: 1;
+    transform: rotate(360deg);
   }
 }
+
 @media (max-width: 480px) {
   .gallery-container {
     padding: 1rem;
