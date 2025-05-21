@@ -24,30 +24,25 @@ const Images = () => {
   if (!project) return <p>Project not found</p>;
 
   return (
-    <div className="gallery-container" style={{ marginTop: "6rem" }}>
+    <div className="gallery-container">
       <h1>
         {project.title} Gallery <span className="yellow-line"></span>
       </h1>
 
-      {loading ? (
-        <div className="loading-indicator">Loading gallery...</div>
-      ) : null}
+      {loading && <div className="loading-indicator">Loading gallery...</div>}
 
-      <div className={`grid-gallery ${loading ? "hidden" : ""}`}>
-        {sortedImages.map((image, index) => {
-          const isLarge = index === 0;
-          return (
-            <LazyLoadImage
-              key={index}
-              alt={`Gallery image ${index + 1}`}
-              src={image.original}
-              effect="blur"
-              onLoad={index === 0 ? handleFirstImageLoad : undefined}
-              className={`gallery-item ${isLarge ? "large" : ""} item-${index + 1}`}
-              wrapperClassName={`gallery-item-wrapper ${isLarge ? "large" : ""}`}
-            />
-          );
-        })}
+      <div className="grid-gallery">
+        {sortedImages.map((image, index) => (
+          <LazyLoadImage
+            key={index}
+            alt={`Gallery image ${index + 1}`}
+            src={image.original}
+            effect="blur"
+            onLoad={index === 0 ? handleFirstImageLoad : undefined}
+            className="gallery-item"
+            wrapperClassName="gallery-item-wrapper"
+          />
+        ))}
       </div>
     </div>
   );
