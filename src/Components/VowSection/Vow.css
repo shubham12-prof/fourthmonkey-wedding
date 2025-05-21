@@ -1,84 +1,78 @@
 .vow-section {
   text-align: center;
   color: #676767;
-  padding: 1rem 10rem;
+  padding: 2rem 1rem;
   background-color: white;
-  text-align: "center";
+  max-width: 1200px;
+  margin: auto;
 }
 
 .vow-section h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
   color: #f2c300;
   text-transform: uppercase;
 }
+
 .vow-section h2 {
-  font-size: 1.4rem;
-  margin-top: 2rem;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
   font-weight: 300;
   color: #f2c300;
+  font-style: italic;
+  padding: 0 1rem;
 }
+
 .vow-section p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
   font-style: italic;
-  margin-top: 0px auto;
-  color: #000000;
-  max-width: 1020px;
-  padding: 0rem 2rem;
-  margin: 0;
+  margin: 0.5rem auto;
+  color: #000;
+  max-width: 800px;
+  padding: 0 1rem;
 }
+
 .vow-section span {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
   font-style: italic;
-  margin-top: 0px auto;
-  color: #000000;
+  color: #000;
   display: inline-block;
-  width: 63%;
+  max-width: 800px;
+  padding: 0 1rem;
 }
-@media (max-width: 1024px) {
-  .vow-section h3 {
-    font-size: 2rem;
+
+@media (min-width: 768px) {
+  .vow-section {
+    padding: 3rem 4rem;
   }
+
+  .vow-section h1 {
+    font-size: 2.8rem;
+  }
+
+  .vow-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .vow-section p,
+  .vow-section span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .vow-section h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
-  }
-  .vow-section h2 {
-    font-size: 2rem;
-    margin-top: 2rem;
-    font-weight: 300;
   }
 
+  .vow-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .vow-section p,
   .vow-section span {
-    display: inline-block;
-    width: 83%;
-  }
-}
-
-@media (max-width: 768px) {
-  .vow-section {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .vow-section {
-    padding: 0.8rem 1.5rem;
-  }
-
-  .vow-section h3 {
-    font-size: 2.2rem;
-  }
-  .vow-section h2 {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-  .vow-section h1 {
-    font-size: 2rem;
-  }
-  .vow-section p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }

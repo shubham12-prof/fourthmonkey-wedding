@@ -1,6 +1,7 @@
 import React from "react";
 import "./Vow.css";
-const vow = () => {
+
+const Vow = () => {
   return (
     <div className="vow-section">
       <h1>Our Vow to You</h1>
@@ -19,4 +20,4 @@ const vow = () => {
   );
 };
 
-export default vow;
+export default Vow;
