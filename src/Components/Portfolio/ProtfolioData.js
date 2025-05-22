@@ -18,7 +18,7 @@ export const projects = [
     id: 1,
     title: "Sanchit + aishwarya",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}hurt4rpfreppsmsjvdd5.jpg`,
+    imageUrl: `${cloudinaryBaseURL}ooxoxzqifj82ggg9jsh3.jpg`,
     galleryImages: Object.entries(images)
       .filter(
         ([key]) =>
@@ -50,7 +50,7 @@ export const projects = [
     id: 3,
     title: "Bharti + Rishab",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}txymycibydzslg2cbscg.jpg`,
+    imageUrl: `${cloudinaryBaseURL}konsabcdfemdpz46hmvr.jpg`,
     galleryImages: Object.entries(images)
       .filter(
         ([key]) =>
@@ -84,7 +84,7 @@ export const projects = [
     id: 5,
     title: "Tanvi + Aman",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}z4qn0uqrpmefibcflwi8.jpg`,
+    imageUrl: `${cloudinaryBaseURL}uuerolnh36zchm0qihra.jpg`,
     galleryImages: Object.entries(images)
       .filter(
         ([key]) =>
@@ -102,7 +102,7 @@ export const projects = [
     id: 6,
     title: "Abhishek + Rashmi",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}q5ogucjputb9fv0sixc6.jpg`,
+    imageUrl: `${cloudinaryBaseURL}e8ccemdrjzdfukxl9nzq.jpg`,
     galleryImages: Object.entries(images)
       .filter(([key]) => key.startsWith("AbhishekandRashmi/Haldi/"))
       .map(([_, value]) => ({
