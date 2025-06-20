@@ -23,11 +23,11 @@ const services = [
 const WeddingServices = () => {
   return (
     <section className="wedding-services">
-      <h2 className="section-title">Our Services</h2>
-      <p className="section-subtitle">Crafted with love, delivered with perfection.</p>
-      <div className="services-grid">
+      <h2 data-aos="zoom-in" className="section-title">Our Services</h2>
+      <p data-aos="zoom-in" className="section-subtitle">Crafted with love, delivered with perfection.</p>
+      <div className="services-grid" >
         {services.map((service, idx) => (
-          <div className="service-card" key={idx}>
+          <div data-aos="flip-left" className="service-card" key={idx}>
             <div className="icon-box">{service.icon}</div>
             <h3>{service.title}</h3>
             <p>{service.desc}</p>

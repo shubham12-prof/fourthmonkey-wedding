@@ -33,50 +33,42 @@ const Header = () => {
       >
         <i className="fas fa-bars"></i>
       </div>
+
       <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+        <div className="close-icon" onClick={() => setIsMenuOpen(false)}>
+          &times;
+        </div>
         <li>
-          <Link onClick={handleLinkClick} className="link-style" to="/AboutUs">
-            ABOUT US
-          </Link>
+          <Link onClick={handleLinkClick} className="link-style" to="/AboutUs">ABOUT US</Link>
         </li>
         <li>
-          <Link
-            to="/ContactForm"
-            onClick={handleLinkClick}
-            className="link-style"
-          >
-            CONNECT
-          </Link>
+          <Link onClick={handleLinkClick} className="link-style" to="/ContactForm">CONNECT</Link>
         </li>
         <li>
-          <Link
-            to="/WeddingHome"
-            onClick={handleLinkClick}
-            className="link-style"
-          >
-            HOME
-          </Link>
+          <Link onClick={handleLinkClick} className="link-style" to="/WeddingHome">HOME</Link>
         </li>
+        <p style={{ alignItems: "center", textAlign: "center", fontSize: "1.3rem", fontFamily: "itelic" }}>
+          We promise moon and stars, and we deliver them.
+          Weddings by Fourth Munky</p>
+        <button className="contact-button">CONTACT US!</button>
       </ul>
+
+
       <div>
         <Link to="/WeddingHome">
-          <picture>
-            <source
-              srcSet="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png"
-              type="image/webp"
-            />
-            <img
-              className="svg-icon-header"
-              src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/f_auto,q_auto,w_50,h_50/p9x32n7xaw3pkt7ufdff.png"
-              alt="Your Icon"
-            />
-          </picture>
+          <img
+            className="svg-icon-header"
+            src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png"
+            alt="Your Icon"
+          />
         </Link>
       </div>
+
       <Link to="/" className="switch-icon-header">
         <FontAwesomeIcon className="shuffle-icon" icon={faShuffle} />
       </Link>
     </nav>
+
   );
 };
 
