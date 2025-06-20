@@ -1,42 +1,41 @@
 import React from "react";
 import "./WeddingPlanning.css";
-import { FaHeart, FaPalette, FaMusic } from "react-icons/fa";
+import { FaRing, FaCameraRetro, FaMusic, FaBirthdayCake } from "react-icons/fa";
 
-const WeddingPlanning = () => {
-  const services = [
-    {
-      icon: <FaHeart size={50} color="#e91e63" />,
-      title: "Complete Wedding Planning",
-      description:
-        "From start to finish, we handle every detail of your dream wedding, ensuring a stress-free and unforgettable experience.",
-    },
-    {
-      icon: <FaPalette size={50} color="#ff9800" />,
-      title: "Concept Planning & Decor Designing",
-      description:
-        "Our expert designers bring your vision to life with unique concepts and breathtaking decorations, making your event truly special.",
-    },
-    {
-      icon: <FaMusic size={50} color="#3f51b5" />,
-      title: "Entertainment Planning & Management",
-      description:
-        "We organize top-tier entertainment, from live performances to DJ setups, ensuring your guests have a fantastic time.",
-    },
-  ];
+const services = [
+  {
+    icon: <FaRing size={36} color="#d81b60" />,
+    title: "Complete Wedding Planning",
+    desc: "From start to finish, we handle every detail of your dream wedding, ensuring a stress-free and unforgettable experience.",
+  },
+  {
+    icon: <FaCameraRetro size={36} color="#8e24aa" />,
+    title: "Concept Planning & Decor Designing",
+    desc: "Our expert designers bring your vision to life with unique concepts and breathtaking decorations, making your event truly special.",
+  },
+  {
+    icon: <FaMusic size={36} color="#3949ab" />,
+    title: "Entertainment Planning & Management",
+    desc: "We organize top-tier entertainment, from live performances to DJ setups, ensuring your guests have a fantastic time.",
+  },
+];
 
+const WeddingServices = () => {
   return (
-    <div className="wedding-planning-container">
-      <h1>OUR SERVICES</h1>
-      {services.map((service, index) => (
-        <div key={index} className="card">
-          <div className="icon">{service.icon}</div>
-          <h3>{service.title}</h3>
-          <p>{service.description}</p>
-          <button className="learn-more">Learn More</button>
-        </div>
-      ))}
-    </div>
+    <section className="wedding-services">
+      <h2 className="section-title">Our Services</h2>
+      <p className="section-subtitle">Crafted with love, delivered with perfection.</p>
+      <div className="services-grid">
+        {services.map((service, idx) => (
+          <div className="service-card" key={idx}>
+            <div className="icon-box">{service.icon}</div>
+            <h3>{service.title}</h3>
+            <p>{service.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default WeddingPlanning;
+export default WeddingServices;

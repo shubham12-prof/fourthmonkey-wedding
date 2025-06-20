@@ -6,11 +6,11 @@ import "aos/dist/aos.css";
 import "./App.css"
 import NotFound from "./Components/NotFound/NotFound";
 
-const LoadingSpinner = () => (
-  <div className="loading-spinner">
-    <div className="spinner"></div>
-  </div>
-);
+// const LoadingSpinner = () => (
+//   <div className="loading-spinner">
+//     <div className="spinner"></div>
+//   </div>
+// );
 
 
 const Home = lazy(() => import("./Components/Home/Home"));
@@ -58,7 +58,9 @@ function App() {
   return (
     <div className="App">
       <ScrollToTop />
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense
+      // fallback={<LoadingSpinner />}
+      >
         <header className="App-header">
           {location.pathname !== "/" && <Navbar />}
 
