@@ -6,13 +6,6 @@ import "aos/dist/aos.css";
 import "./App.css"
 import NotFound from "./Components/NotFound/NotFound";
 
-// const LoadingSpinner = () => (
-//   <div className="loading-spinner">
-//     <div className="spinner"></div>
-//   </div>
-// );
-
-
 const Home = lazy(() => import("./Components/Home/Home"));
 const WeddingHome = lazy(() => import("./Components/Weddings/WeddingHome"));
 const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
@@ -72,6 +65,7 @@ function App() {
             <Route path="/ContactForm" element={<ContactForm />} />
             <Route path="/Images/:projectId" element={<Images />} />
             <Route path="*" element={<NotFound />} />
+
           </Routes>
 
           <Footer />

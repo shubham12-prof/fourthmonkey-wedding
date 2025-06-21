@@ -16,9 +16,10 @@ const cloudinaryBaseURL =
 export const projects = [
   {
     id: 1,
+    headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1750530153/hurt4rpfreppsmsjvdd5.jpg",
     title: "Sanchit + aishwarya",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}ooxoxzqifj82ggg9jsh3.jpg`,
+    imageUrl: `${cloudinaryBaseURL}hurt4rpfreppsmsjvdd5.jpg`,
     galleryImages: Object.entries(images)
       .filter(
         ([key]) =>
@@ -31,9 +32,10 @@ export const projects = [
   },
   {
     id: 2,
+    headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1747853429/xntaypt6opnv16chgux2.jpg",
     title: "Bhavneet + Ritvika",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}wnvfdaizzfwh25ewnghx.jpg`,
+    imageUrl: `${cloudinaryBaseURL}xntaypt6opnv16chgux2.jpg`,
     galleryImages: Object.entries(images)
       .filter(
         ([key]) =>
@@ -48,9 +50,10 @@ export const projects = [
   },
   {
     id: 3,
+    headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1747853429/kkbhzyc32oosmziqxyoh.jpg",
     title: "Bharti + Rishab",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}konsabcdfemdpz46hmvr.jpg`,
+    imageUrl: `${cloudinaryBaseURL}kkbhzyc32oosmziqxyoh.jpg`,
     galleryImages: Object.entries(images)
       .filter(
         ([key]) =>
@@ -66,6 +69,8 @@ export const projects = [
   },
   {
     id: 4,
+    headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1747853429/yynr0zqsnkyyy1ldepx0.jpg",
+
     title: "Dheeraj + Ananya",
     description: "DEHRADUN || 2023",
     imageUrl: `${cloudinaryBaseURL}yynr0zqsnkyyy1ldepx0.jpg`,
@@ -81,10 +86,12 @@ export const projects = [
       })),
   },
   {
+
     id: 5,
+    headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1747853429/u48qigbfoezetbzeraeh.jpg",
     title: "Tanvi + Aman",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}uuerolnh36zchm0qihra.jpg`,
+    imageUrl: `${cloudinaryBaseURL}u48qigbfoezetbzeraeh.jpg`,
     galleryImages: Object.entries(images)
       .filter(
         ([key]) =>
@@ -100,6 +107,8 @@ export const projects = [
   },
   {
     id: 6,
+    headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1747853429/e8ccemdrjzdfukxl9nzq.jpg",
+
     title: "Abhishek + Rashmi",
     description: "DEHRADUN || 2023",
     imageUrl: `${cloudinaryBaseURL}e8ccemdrjzdfukxl9nzq.jpg`,
@@ -112,9 +121,11 @@ export const projects = [
   },
   {
     id: 7,
+    headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1747853429/ytrdei0dyhfgiibbqb1i.jpg",
+
     title: "Vidhi + Prateek",
     description: "DEHRADUN || 2023",
-    imageUrl: `${cloudinaryBaseURL}dc5wrxkdaoqrfjuqtf5b.jpg`,
+    imageUrl: `${cloudinaryBaseURL}ytrdei0dyhfgiibbqb1i.jpg`,
     galleryImages: Object.entries(images)
       .filter(([key]) => key.startsWith("VidhiaurPrateek/haldi/"))
       .map(([_, value]) => ({

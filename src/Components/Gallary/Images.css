@@ -7,8 +7,9 @@
 
 .gallery-container h1 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: normal;
   color: #333;
+  font-style: italic;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -28,22 +29,37 @@
 
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 0.8rem;
   margin: 0 auto;
   justify-content: center;
   align-content: center;
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
 }
 
 .gallery-item-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 100%;
+  height: 100%;
   overflow: hidden;
   background-color: #f2c300;
   transition: transform 0.3s ease;
 }
 
+.gallery-item-wrapper:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.gallery-item-wrapper:nth-child(5n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-item-wrapper:nth-child(3n) {
+  grid-row: span 2;
+}
 .gallery-item-wrapper:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -65,8 +81,8 @@
 
 .loading-indicator {
   position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 100%;
   height: 100%;
   background-color: #f2c300;
@@ -74,6 +90,7 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
+  margin-top: 5rem;
 }
 
 .loading-indicator::before {
@@ -108,6 +125,16 @@
   .gallery-container h1 {
     font-size: 1.5rem;
   }
+
+  .grid-gallery {
+    grid-auto-rows: 150px;
+  }
+
+  .gallery-item-wrapper:nth-child(5n),
+  .gallery-item-wrapper:nth-child(3n) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -121,37 +148,3 @@
     font-size: 2rem;
   }
 }
-
-/*
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .grid-gallery {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-  }
-
-  .gallery-container h1 {
-    font-size: 2.2rem;
-  }
-
-  .gallery-item-wrapper.large {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-}
-
-@media (min-width: 1441px) {
-  .grid-gallery {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 18px;
-  }
-
-  .gallery-container h1 {
-    font-size: 2.5rem;
-  }
-
-  .gallery-item-wrapper.large {
-    grid-column: span 3;
-    grid-row: span 2;
-  }
-}
-*/

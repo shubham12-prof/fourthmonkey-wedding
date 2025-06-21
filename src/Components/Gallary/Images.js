@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { projects } from "../Portfolio/ProtfolioData";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import Portfolio from "../Portfolio/Portfolio";
 
 const Images = () => {
   const { projectId } = useParams();
@@ -24,27 +25,43 @@ const Images = () => {
   if (!project) return <p>Project not found</p>;
 
   return (
-    <div className="gallery-container">
-      <h1>
-        {project.title} Gallery <span className="yellow-line"></span>
-      </h1>
+    <>
+      <div className="gallery-container">
+        <div>
+          {project.headImageUrl && (
+            <img
+              src={project.headImageUrl}
+              alt="Header Image"
+              style={{
+                width: "95%",
+                height: "100vh",
+                objectFit: "cover",
+                marginBottom: "1rem"
+              }}
+            />
+          )}
+        </div>
+        <h1>
+          {project.title} Gallery <span className="yellow-line"></span>
+        </h1>
 
-      {loading && <div className="loading-indicator">Loading gallery...</div>}
+        {loading && <div className="loading-indicator">Loading gallery...</div>}
 
-      <div className="grid-gallery">
-        {sortedImages.map((image, index) => (
-          <LazyLoadImage
-            key={index}
-            alt={`Gallery image ${index + 1}`}
-            src={image.original}
-            effect="blur"
-            onLoad={index === 0 ? handleFirstImageLoad : undefined}
-            className="gallery-item"
-            wrapperClassName="gallery-item-wrapper"
-          />
-        ))}
+        <div className="grid-gallery">
+          {sortedImages.map((image, index) => (
+            <LazyLoadImage
+              key={index}
+              alt={`Gallery image ${index + 1}`}
+              src={image.original}
+              effect="blur"
+              onLoad={index === 0 ? handleFirstImageLoad : undefined}
+              className="gallery-item"
+              wrapperClassName="gallery-item-wrapper"
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

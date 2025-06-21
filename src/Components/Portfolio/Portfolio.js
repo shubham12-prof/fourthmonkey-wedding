@@ -29,19 +29,18 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-container">
-      <h2 className="header-text-portfolio">Welcome to Our Portfolio</h2>
-      <p className="header-text-story">
-        Crafting timeless love stories with breathtaking designs, seamless
-        planning, and unforgettable moments. From intimate gatherings to grand
-        celebrations, we bring your dream wedding to life with elegance, luxury,
-        and perfection.
-      </p>
+      {/* <h2 className="header-text-portfolio">Welcome to Our Portfolio</h2> */}
+      <section className="header-portfolio">
+        <div className="header-text">
+          Crafting <span className="word-highlight">timeless love stories</span> with breathtaking designs, seamless planning, and unforgettable moments. From intimate gatherings to grand celebrations, we bring your dream wedding to life with <span className="word-highlight">elegance, luxury, and perfection</span>. Take a moment to explore what we've created — a world apart, designed just for them.
+        </div>
+      </section>
       <div className="card-link">
         {projects.map((project) => (
           <Link
             to={`/Images/${project.id}`}
             key={project.id}
-            style={{ textDecoration: "none", color: "inherit" }}
+            className="card-image-link"
           >
             <div className="card-portfolio">
               <LazyLoadImage
@@ -49,7 +48,7 @@ const Portfolio = () => {
                 alt={project.title}
                 effect="blur"
                 className="card-image-portfolio"
-                // width="400"
+                width="420"
                 height="400"
                 loading="eager"
               />
