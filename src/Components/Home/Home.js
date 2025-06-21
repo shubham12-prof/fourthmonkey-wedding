@@ -60,7 +60,6 @@ const Home = () => {
           alt="Icon"
         />
       </div>
-
       <div
         className="background-container"
         style={{

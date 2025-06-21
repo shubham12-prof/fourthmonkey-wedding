@@ -5,6 +5,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import WeddingPlanning from "../WeddingPlanning/WeddingPlanning";
 import Contact from "../ContactUs/ContactForm";
 import Vow from "../VowSection/Vow";
+import VenueSlider from "../Venue/VenueSlider";
 import "../AboutPage/AboutPage.css";
 import Portfolio from "../Portfolio/Portfolio";
 const WeddingHome = () => {
@@ -32,28 +33,9 @@ const WeddingHome = () => {
       </div>
       <Vow />
       <AboutUs />
-      {/* <Hightlights /> */}
       <WeddingPlanning />
       <Portfolio />
-      {/* <section
-        style={{ color: "black", margin: "0px 100px" }}
-        className="testimonials"
-      >
-        <h2 style={{ fontSize: "2rem", color: "#f2c300" }}>Testimonials</h2>
-        <h2 style={{ fontSize: "1.4rem", color: "#f2c300" }}>
-          Fourth Munky Entertainment
-        </h2>
-        <p style={{ fontSize: "1.1rem", fontStyle: "italic" }}>
-          Where Passion Meets Performance At Fourth Munky Live,
-          <br></br>
-          <span style={{ fontSize: "1.1rem", fontStyle: "italic" }}>
-            we take your events beyond imagination. From conceptualization to
-            flawless execution, we bring unparalleled energy, ideas, and
-            technology to every experience. “We do events because we can't
-            imagine life without them.”
-          </span>
-        </p>
-      </section> */}
+      <VenueSlider />
       <Contact />
     </div>
   );

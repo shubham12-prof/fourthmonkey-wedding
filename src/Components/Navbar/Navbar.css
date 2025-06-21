@@ -1,3 +1,6 @@
+div:focus {
+  outline: none;
+}
 .hero-nav {
   width: 100%;
   display: flex;
@@ -15,7 +18,18 @@
   font-size: 1.8rem;
   cursor: pointer;
   color: #f2c300;
+  outline: none;
+  user-select: none;
+  border: none;
 }
+
+.hamburger-icon:focus,
+.hamburger-icon:active,
+.hamburger-icon::selection {
+  outline: none !important;
+  border: none !important;
+}
+
 .hamburger-icon:hover {
   color: #fff;
 }
@@ -77,6 +91,18 @@
 .svg-icon-header {
   width: 70px;
   height: 70px;
+  outline: none !important;
+  user-select: none;
+  border: none;
+  pointer-events: auto;
+  -webkit-user-drag: none;
+}
+
+.svg-icon-header:focus,
+.svg-icon-header:active,
+.svg-icon-header::selection {
+  outline: none !important;
+  border: none !important;
 }
 
 .switch-icon-header {

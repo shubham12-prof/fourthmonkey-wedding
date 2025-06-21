@@ -1,0 +1,52 @@
+.multi-slider-container {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+.multi-slider-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  width: 100%;
+}
+
+.slide-group {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 10px 0;
+}
+
+.multi-slide {
+  width: 30%;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .multi-slide {
+    width: 45%;
+    max-height: 140px;
+  }
+  .slide-group {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .multi-slide {
+    width: 90%;
+    max-height: 130px;
+  }
+  .slide-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}

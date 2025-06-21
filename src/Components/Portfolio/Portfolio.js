@@ -29,13 +29,13 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-container">
-      <h1 className="header-text">Welcome to Our Portfolio</h1>
-      <h1 className="header-text-story">
+      <h2 className="header-text-portfolio">Welcome to Our Portfolio</h2>
+      <p className="header-text-story">
         Crafting timeless love stories with breathtaking designs, seamless
         planning, and unforgettable moments. From intimate gatherings to grand
         celebrations, we bring your dream wedding to life with elegance, luxury,
         and perfection.
-      </h1>
+      </p>
       <div className="card-link">
         {projects.map((project) => (
           <Link

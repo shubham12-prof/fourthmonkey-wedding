@@ -19,18 +19,19 @@
   justify-content: center;
 }
 
-.header-text {
-  font-family: Alegreya;
-  font-weight: 400;
-  font-size: 2rem;
-  letter-spacing: 0.01em;
-  line-height: 1.3em;
-  color: #333;
+.header-text-portfolio {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000000;
   position: relative;
   display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.header-text::after {
+.header-text-portfolio h2 {
+  font-family: none;
+}
+.header-text-portfolio::after {
   content: "";
   position: absolute;
   left: 0;
@@ -41,10 +42,8 @@
 }
 
 .header-text-story {
-  font-family: alegreya;
-  font-weight: 400;
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   letter-spacing: 0.01em;
   line-height: 1.3em;
   text-decoration: none;
@@ -53,10 +52,7 @@
   max-width: 888px;
   text-align: center;
   margin-bottom: 2rem;
-}
-.header-text h1 {
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 2rem;
 }
 
 .card-link {
@@ -101,7 +97,7 @@
 }
 
 @media (max-width: 1024px) {
-  .header-text h1 {
+  .header-text h2 {
     font-size: 2rem;
   }
   .card-link {
@@ -111,7 +107,7 @@
 }
 
 @media (max-width: 828px) {
-  .header-text h1 {
+  .header-text h2 {
     font-size: 1.5rem;
   }
   .card-link {
@@ -125,7 +121,7 @@
   .portfolio-container {
     width: 90%;
   }
-  .header-text h1 {
+  .header-text h2 {
     font-size: 1.3rem;
   }
   .card-link {

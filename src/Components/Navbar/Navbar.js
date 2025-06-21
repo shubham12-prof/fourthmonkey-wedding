@@ -30,9 +30,12 @@ const Header = () => {
         role="button"
         aria-label="Toggle menu"
         aria-expanded={isMenuOpen}
+        tabIndex={-1}
+        style={{ outline: "none", userSelect: "none" }}
       >
-        <i className="fas fa-bars"></i>
+        <i className="fas fa-bars" tabIndex={-1} draggable={false} />
       </div>
+
 
       <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <div className="close-icon" onClick={() => setIsMenuOpen(false)}>
@@ -54,15 +57,20 @@ const Header = () => {
       </ul>
 
 
-      <div>
-        <Link to="/WeddingHome">
+      <div style={{ outline: "none", userSelect: "none" }}>
+        <Link to="/WeddingHome" tabIndex={-1}>
           <img
             className="svg-icon-header"
             src="https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738242677/p9x32n7xaw3pkt7ufdff.png"
             alt="Your Icon"
+            tabIndex={-1}
+            draggable={false}
           />
         </Link>
       </div>
+
+
+
 
       <Link to="/" className="switch-icon-header">
         <FontAwesomeIcon className="shuffle-icon" icon={faShuffle} />
