@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./VenueSlider.css";
 
 const images = [
@@ -12,55 +12,34 @@ const images = [
     "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1750501090/jxfvp7cjbehy3rs2ghna.jpg",
 ];
 
+
 const VenueSlider = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const itemsPerSlide = 3;
+    const trackRef = useRef(null);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) =>
-                (prevIndex + 1) % Math.ceil(images.length / itemsPerSlide)
-            );
-        }, 3000);
+        const track = trackRef.current;
+        let animationFrame;
 
-        return () => clearInterval(interval);
+        const scroll = () => {
+            track.scrollLeft += 1;
+            if (track.scrollLeft >= track.scrollWidth / 2) {
+                track.scrollLeft = 0;
+            }
+            animationFrame = requestAnimationFrame(scroll);
+        };
+
+        animationFrame = requestAnimationFrame(scroll);
+
+        return () => cancelAnimationFrame(animationFrame);
     }, []);
 
     return (
-        <div className="multi-slider-container">
-            <h1
-                style={{
-                    color: "#f2c300",
-                    fontSize: "2.5rem",
-                    fontWeight: "bold",
-                    textTransform: "uppercase",
-                    letterSpacing: "2px",
-                    textAlign: "center",
-                    marginBottom: "1rem",
-                    fontFamily: "Georgia, serif",
-                }}
-            >
-                Our Venues
-            </h1>
-
-            <div
-                className="multi-slider-track"
-                style={{
-                    transform: `translateX(-${currentIndex * 100}%)`,
-                }}
-            >
-                {
-
-                    Array.from({ length: Math.ceil(images.length / itemsPerSlide) }).map((_, groupIndex) => (
-                        <div className="slide-group" key={groupIndex}>
-                            {images
-                                .slice(groupIndex * itemsPerSlide, groupIndex * itemsPerSlide + itemsPerSlide)
-                                .map((img, idx) => (
-                                    <img className="multi-slide" src={img} alt={`venue-${idx}`} key={idx} />
-                                ))}
-                        </div>
-                    ))
-                }
+        <div className="continuous-slider-wrapper">
+            <h2 className="section-title">Properties We Work On</h2>
+            <div className="continuous-slider-track" ref={trackRef}>
+                {[...images, ...images].map((src, index) => (
+                    <img key={index} src={src} alt={`venue-${index}`} className="continuous-slide" />
+                ))}
             </div>
         </div>
     );
