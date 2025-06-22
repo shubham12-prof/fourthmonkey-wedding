@@ -148,3 +148,31 @@
     font-size: 2rem;
   }
 }
+
+.gallery-item-with-logo::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://res.cloudinary.com/dmj6ur8sm/image/upload/v1750595644/osk6shpe0kkpxoaa0coc.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.gallery-item-with-logo:hover::after {
+  opacity: 0.8;
+}
+@media (max-width: 480px) {
+  .gallery-item-with-logo::after {
+    width: 35px;
+    height: 35px;
+    top: 8px;
+    right: 8px;
+  }
+}

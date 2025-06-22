@@ -56,7 +56,10 @@ const Images = () => {
               effect="blur"
               onLoad={index === 0 ? handleFirstImageLoad : undefined}
               className="gallery-item"
-              wrapperClassName="gallery-item-wrapper"
+              wrapperClassName="gallery-item-wrapper gallery-item-with-logo"
+              wrapperProps={{
+                'data-logo-url': 'https://res.cloudinary.com/dmj6ur8sm/image/upload/v1750595644/osk6shpe0kkpxoaa0coc.png'
+              }}
             />
           ))}
         </div>
