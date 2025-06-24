@@ -103,6 +103,13 @@
   animation: spin 1s linear infinite;
 }
 
+.gallery-container-headImage {
+  width: 95%;
+  height: 100vh;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -125,11 +132,17 @@
   .gallery-container h1 {
     font-size: 1.5rem;
   }
-
-  .grid-gallery {
-    grid-auto-rows: 150px;
+  .gallery-container-headImage {
+    width: 95%;
+    height: 60vh;
+    object-fit: cover;
+    margin-bottom: 1rem;
   }
-
+  .grid-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    gap: 0.3rem;
+    margin: 0 auto;
+  }
   .gallery-item-wrapper:nth-child(5n),
   .gallery-item-wrapper:nth-child(3n) {
     grid-column: span 1;

@@ -32,12 +32,7 @@ const Images = () => {
             <img
               src={project.headImageUrl}
               alt="Header Image"
-              style={{
-                width: "95%",
-                height: "100vh",
-                objectFit: "cover",
-                marginBottom: "1rem"
-              }}
+              className="gallery-container-headImage"
             />
           )}
         </div>
