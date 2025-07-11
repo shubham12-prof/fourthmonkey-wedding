@@ -1,9 +1,9 @@
 import React, { lazy, Suspense, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import ScrollToTop from "./Common/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./App.css"
+import "./App.css";
 import NotFound from "./Components/NotFound/NotFound";
 
 const Home = lazy(() => import("./Components/Home/Home"));
@@ -15,6 +15,21 @@ const AboutPage = lazy(() => import("./Components/AboutPage/AboutPage"));
 const ContactForm = lazy(() => import("./Components/ContactUs/ContactForm"));
 const Images = lazy(() => import("./Components/Gallary/Images"));
 
+function RedirectHandler() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirectPath = params.get("redirect");
+    if (redirectPath && location.pathname === "/") {
+      navigate(redirectPath, { replace: true });
+    }
+  }, [location, navigate]);
+
+  return null;
+}
+
 function App() {
   const location = useLocation();
 
@@ -23,9 +38,8 @@ function App() {
       duration: 2000,
       once: false,
       mirror: false,
-      anchorPlacement: 'top-bottom',
+      anchorPlacement: "top-bottom",
     });
-
 
     return () => {
       AOS.refresh();
@@ -36,10 +50,10 @@ function App() {
     const preloadImages = () => {
       const imagesToPreload = [
         "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178852/pett6crpdfr4rp0embkr.jpg",
-        "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg"
+        "https://res.cloudinary.com/dmj6ur8sm/image/upload/v1738178851/qde4wqb4uyvp8l0w1krr.jpg",
       ];
 
-      imagesToPreload.forEach(src => {
+      imagesToPreload.forEach((src) => {
         const img = new Image();
         img.src = src;
       });
@@ -51,9 +65,8 @@ function App() {
   return (
     <div className="App">
       <ScrollToTop />
-      <Suspense
-      // fallback={<LoadingSpinner />}
-      >
+      <RedirectHandler />
+      <Suspense>
         <header className="App-header">
           {location.pathname !== "/" && <Navbar />}
 
@@ -65,7 +78,6 @@ function App() {
             <Route path="/ContactForm" element={<ContactForm />} />
             <Route path="/Images/:projectId" element={<Images />} />
             <Route path="*" element={<NotFound />} />
-
           </Routes>
 
           <Footer />
