@@ -31,7 +31,7 @@ div:focus {
 }
 
 .hamburger-icon:hover {
-  color: #fff;
+  color: black;
 }
 .nav-links {
   display: none;
@@ -122,7 +122,7 @@ div:focus {
 }
 
 .shuffle-icon:hover {
-  color: #ffff;
+  color: black;
 }
 
 @media (max-width: 768px) {
