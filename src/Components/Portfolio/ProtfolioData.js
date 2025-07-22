@@ -181,7 +181,6 @@ const ananyaanddheeraj = [
   "v1752820882/kfbmwp6qz9xnciafljww.jpg",
   "v1752820881/zbfocsg17k5mwvxhf7wq.jpg",
   "v1752820881/zn57to3fvt2ktrz5cw58.jpg",
-  "v1752820880/wwzwfswzzhl0tpaywcif.jpg",
   "v1752820880/yfehv9pptuxyqvzgvmss.jpg",
   "v1752820877/bi5xf9qnw6zewzlutqbn.jpg",
   "v1752820875/tsqqhbptuya3ptkdldl5.jpg",
@@ -191,7 +190,6 @@ const ananyaanddheeraj = [
   "v1752820873/fmtto4ebjzphl4oxtkzs.jpg",
   "v1752820871/no5h7ilbd93j2uoeefzo.jpg",
   "v1752820870/anihvcuhotfza879e7xp.jpg",
-  "v1752820869/oslziw1gow8rw5oznfdb.jpg",
   "v1752820868/kh0imtyc6kdhffxaioyt.jpg",
   "v1752820868/rq6qtyzmbnuch6w04oxg.jpg",
   "v1752820867/tbfgtu2evwcnts9xtkz5.jpg",
@@ -1475,15 +1473,16 @@ export const projects = [
     title: "Rashmi + Abhishek",
     description: "DEHRADUN || 2023",
     headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/w_1400,q_auto,f_auto/v1752825081/regiohfr3jmioyi2mzms.jpg",
-    imageUrl: cloudinaryUrl + "v1752825081/regiohfr3jmioyi2mzms.jpg",
+    imageUrl: cloudinaryUrl + "v1752824989/rpr8qta1vnytaavotu6d.jpg",
     galleryImages: generateCloudinaryImages(rashmiandabhishek),
   },
+
   {
     id: 2,
     title: "Bharti + Rishab",
     description: "DEHRADUN || 2023",
     headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/w_1400,q_auto,f_auto/v1750665040/cayicvnpnituplrdxvev.jpg",
-    imageUrl: cloudinaryUrl + "v1752821913/wjg2jouzixsmhpbnnabh.jpg",
+    imageUrl: cloudinaryUrl + "v1753174157/eabolxp5nxcuhgnhrtog.jpg",
     galleryImages: generateCloudinaryImages(bhartiandrisabh),
   },
 
@@ -1492,7 +1491,7 @@ export const projects = [
     title: "Tanvi + Aman",
     description: "DEHRADUN || 2023",
     headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/w_1400,q_auto,f_auto/v1750665203/hk6v8l7tyhlxvkhvqpsu.jpg",
-    imageUrl: cloudinaryUrl + "v1752823460/xcvtsrst6pd0wavtaeru.jpg",
+    imageUrl: cloudinaryUrl + "v1752822171/x8caql6tshlvngpxicew.jpg",
     galleryImages: generateCloudinaryImages(tanviandaman),
   },
   {
@@ -1508,7 +1507,7 @@ export const projects = [
     title: "Jass + Pav",
     description: "DEHRADUN || 2023",
     headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/w_1400,q_auto,f_auto/v1747853429/xntaypt6opnv16chgux2.jpg",
-    imageUrl: cloudinaryUrl + "v1752818891/kgusmcsgwfwfm5rohp57.jpg",
+    imageUrl: cloudinaryUrl + "v1752818716/pghucwa4mvmp8gr0rmex.jpg",
     galleryImages: generateCloudinaryImages(jassandpaw),
   },
   {
@@ -1516,7 +1515,7 @@ export const projects = [
     title: "Ananya + Dheeraj",
     description: "DEHRADUN || 2023",
     headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/w_1400,q_auto,f_auto/v1750665077/kd2r8ong0rg5v26cq23e.jpg",
-    imageUrl: cloudinaryUrl + "v1752821019/bhv12jqefrmdpg6f2eqm.jpg",
+    imageUrl: cloudinaryUrl + "v1752821072/tbrvydciwweqgaxcwwxs.jpg",
     galleryImages: generateCloudinaryImages(ananyaanddheeraj),
   },
   {
@@ -1524,7 +1523,7 @@ export const projects = [
     title: "Vidhi + Prateek",
     description: "DEHRADUN || 2023",
     headImageUrl: "https://res.cloudinary.com/dmj6ur8sm/image/upload/w_1400,q_auto,f_auto/v1750665750/mhptgvhf7mfmymsj6boi.jpg",
-    imageUrl: cloudinaryUrl + "v1752824268/tvuiflbj04pz5wtnexte.jpg",
+    imageUrl: cloudinaryUrl + "v1752823887/ogumgpro7smx2dg9tpyt.jpg",
     galleryImages: generateCloudinaryImages(vidhiandprateek),
   },
   {
@@ -1532,7 +1531,7 @@ export const projects = [
     title: "Diksha + Piyush",
     description: "DEHRADUN || 2023",
     headImageUrl: cloudinaryUrl + "v1752820152/s8nllfnwviuqyfyxcxfm.jpg",
-    imageUrl: cloudinaryUrl + "v1752820152/s8nllfnwviuqyfyxcxfm.jpg",
+    imageUrl: cloudinaryUrl + "v1752820078/vgw31efzneprcmrbxaaf.jpg",
     galleryImages: generateCloudinaryImages(diskhaandpiyush),
   },
 ];

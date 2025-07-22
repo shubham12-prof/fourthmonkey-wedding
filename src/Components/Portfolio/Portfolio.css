@@ -67,15 +67,16 @@
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 2rem;
   width: 80%;
+  margin: 0 auto 1rem;
   justify-content: center;
-  margin-bottom: 1rem;
+  justify-items: center;
 }
 
 .card-portfolio {
   background-color: white;
-  width: 94%;
+  width: 85%;
   max-width: 380px;
-  height: 460px;
+  height: 400px;
 }
 
 .card-image-portfolio {
@@ -99,7 +100,10 @@
 }
 
 .card-image-link {
-  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card-content-portfolio p {
