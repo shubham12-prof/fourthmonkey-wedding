@@ -60,10 +60,11 @@
 .gallery-item-wrapper:nth-child(3n) {
   grid-row: span 2;
 }
-/* .gallery-item-wrapper:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-} */
+
+.gallery-item-wrapper:nth-last-child(-n + 3) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
 
 .gallery-item {
   position: absolute;
@@ -74,10 +75,6 @@
   object-fit: cover;
   transition: transform 0.5s ease;
 }
-
-/* .gallery-item-wrapper:hover .gallery-item {
-  transform: scale(1.05);
-} */
 
 .loading-indicator {
   position: fixed;

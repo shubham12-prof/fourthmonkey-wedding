@@ -82,7 +82,15 @@ const Header = () => {
         <p style={{ alignItems: "center", textAlign: "center", fontSize: "1.3rem", fontFamily: "itelic" }}>
           We promise moon and stars, and we deliver them.
           Weddings by Fourth Munky</p>
-        <button className="contact-button">CONTACT US!</button>
+        <button className="contact-button"> <a
+          href="https://wa.me/7417065899?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20free%20consultation%20for%20wedding%20planning."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-button"
+        >
+          CONTACT US!
+        </a>
+        </button>
       </ul>
 
       <div style={{ outline: "none", userSelect: "none" }}>

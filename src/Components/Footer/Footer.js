@@ -17,7 +17,15 @@ const Footer = () => {
             FOURTH MUNY ENTERTAINMENT PRIVATE LIMITED
           </h2>
           <p className="footer-subtitle">For Business Enquiries only:</p>
-          <button className="contact-button">CONTACT US!</button>
+          <button className="contact-button"> <a
+            href="https://wa.me/7417065899?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20free%20consultation%20for%20wedding%20planning."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-button"
+          >
+            CONTACT US!
+          </a>
+          </button>
         </div>
 
         <div className="footer-section">
