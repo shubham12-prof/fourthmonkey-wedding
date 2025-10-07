@@ -74,10 +74,13 @@ const Header = () => {
           <Link onClick={handleLinkClick} className="link-style" to="/AboutUs">ABOUT US</Link>
         </li>
         <li>
-          <Link onClick={handleLinkClick} className="link-style" to="/ContactForm">CONNECT</Link>
+          <Link onClick={handleLinkClick} className="link-style" to="/ContactForm">CONTACT US!</Link>
         </li>
         <li>
           <Link onClick={handleLinkClick} className="link-style" to="/WeddingHome">HOME</Link>
+        </li>
+        <li>
+          <Link onClick={handleLinkClick} className="link-style" to="/Terms">TERMS & CONDITIONS</Link>
         </li>
         <p style={{ alignItems: "center", textAlign: "center", fontSize: "1.3rem", fontFamily: "itelic" }}>
           We promise moon and stars, and we deliver them.
@@ -88,7 +91,7 @@ const Header = () => {
           rel="noopener noreferrer"
           className="whatsapp-button"
         >
-          CONTACT US!
+          CONNECT
         </a>
         </button>
       </ul>

@@ -15,6 +15,9 @@ const AboutPage = lazy(() => import("./Components/AboutPage/AboutPage"));
 const ContactForm = lazy(() => import("./Components/ContactUs/ContactForm"));
 const Images = lazy(() => import("./Components/Gallary/Images"));
 
+const Terms = lazy(() => import("./Components/Terms/Terms"));
+
+
 function RedirectHandler() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -76,6 +79,7 @@ function App() {
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/AboutUs" element={<AboutPage />} />
             <Route path="/ContactForm" element={<ContactForm />} />
+            <Route path="/Terms" element={<Terms />} />
             <Route path="/Images/:projectId" element={<Images />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
