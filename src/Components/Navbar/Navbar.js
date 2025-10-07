@@ -82,6 +82,9 @@ const Header = () => {
         <li>
           <Link onClick={handleLinkClick} className="link-style" to="/Terms">TERMS & CONDITIONS</Link>
         </li>
+        <li>
+          <Link onClick={handleLinkClick} className="link-style" to="/WeddingPlanning">Services</Link>
+        </li>
         <p style={{ alignItems: "center", textAlign: "center", fontSize: "1.3rem", fontFamily: "itelic" }}>
           We promise moon and stars, and we deliver them.
           Weddings by Fourth Munky</p>
