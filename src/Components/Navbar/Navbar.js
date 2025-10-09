@@ -71,20 +71,24 @@ const Header = () => {
           &times;
         </div>
         <li>
-          <Link onClick={handleLinkClick} className="link-style" to="/AboutUs">ABOUT US</Link>
-        </li>
-        <li>
-          <Link onClick={handleLinkClick} className="link-style" to="/ContactForm">CONTACT US!</Link>
-        </li>
-        <li>
           <Link onClick={handleLinkClick} className="link-style" to="/WeddingHome">HOME</Link>
+        </li>
+        <li>
+          <Link onClick={handleLinkClick} className="link-style" to="/WeddingPlanning">SERVICES</Link>
+        </li>
+        <li>
+          <Link onClick={handleLinkClick} className="link-style" to="/Reservation">HOTEL RESERVATION</Link>
+        </li>
+        <li>
+          <Link onClick={handleLinkClick} className="link-style" to="/AboutUs">ABOUT US</Link>
         </li>
         <li>
           <Link onClick={handleLinkClick} className="link-style" to="/Terms">TERMS & CONDITIONS</Link>
         </li>
         <li>
-          <Link onClick={handleLinkClick} className="link-style" to="/WeddingPlanning">Services</Link>
+          <Link onClick={handleLinkClick} className="link-style" to="/ContactForm">CONTACT US!</Link>
         </li>
+
         <p style={{ alignItems: "center", textAlign: "center", fontSize: "1.3rem", fontFamily: "itelic" }}>
           We promise moon and stars, and we deliver them.
           Weddings by Fourth Munky</p>

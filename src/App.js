@@ -16,7 +16,7 @@ const ContactForm = lazy(() => import("./Components/ContactUs/ContactForm"));
 const Images = lazy(() => import("./Components/Gallary/Images"));
 const Terms = lazy(() => import("./Components/Terms/Terms"));
 const WeddingPlanning = lazy(() => import("./Components/WeddingPlanning/WeddingPlanning"));
-
+const Reservation = lazy(() => import("./Components/Reservation/Reservation"));
 
 function RedirectHandler() {
   const navigate = useNavigate();
@@ -80,6 +80,7 @@ function App() {
             <Route path="/AboutUs" element={<AboutPage />} />
             <Route path="/ContactForm" element={<ContactForm />} />
             <Route path="/Terms" element={<Terms />} />
+            <Route path="/Reservation" element={<Reservation />} />
             <Route path="/WeddingPlanning" element={<WeddingPlanning />} />
             <Route path="/Images/:projectId" element={<Images />} />
             <Route path="*" element={<NotFound />} />

@@ -46,7 +46,6 @@ div:focus {
   left: 0;
   height: 100vh;
   width: 40vw;
-  padding: 2rem;
   z-index: 999;
   box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
   animation: slideIn 0.3s ease-in-out;
