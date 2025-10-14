@@ -100,11 +100,37 @@ export default function TermsAndConditions() {
                 </p>
                 <div className="terms-links">
                     <p>Quick Links:</p>
-
                     <ul>
-                        <li><Link to="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/shipping" className="terms-link">Shipping </Link></li>
-                        <li><Link to="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/terms" className="terms-link">Terms </Link></li>
-                        <li><Link to="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/refund" className="terms-link">Cancellation </Link></li>
+                        <li>
+                            <a
+                                href="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/shipping"
+                                className="terms-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Shipping
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/terms"
+                                className="terms-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/refund"
+                                className="terms-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Cancellation
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
