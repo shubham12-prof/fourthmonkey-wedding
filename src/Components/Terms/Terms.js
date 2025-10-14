@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Terms.css";
 
 export default function TermsAndConditions() {
@@ -35,9 +35,7 @@ export default function TermsAndConditions() {
                         Full payment or agreed milestones must be completed before the event
                         date or as per the contract.
                     </li>
-                    <li>
-                        Payments can be made via the methods listed on our website.
-                    </li>
+                    <li>Payments can be made via the methods listed on our website.</li>
                 </ul>
 
                 <h2>4. Cancellation and Refunds</h2>
@@ -79,8 +77,8 @@ export default function TermsAndConditions() {
 
                 <h2>9. Privacy</h2>
                 <p>
-                    We respect your privacy and handle personal data as outlined in our
-                    Privacy Policy.
+                    We respect your privacy and handle personal data as outlined in our Privacy Policy
+                    .
                 </p>
 
                 <h2>10. Dispute Resolution</h2>
@@ -98,9 +96,17 @@ export default function TermsAndConditions() {
 
                 <h2>12. Contact</h2>
                 <p>
-                    For any queries regarding these Terms, please contact us at [contact
-                    email/phone].
+                    For any queries regarding these Terms, please{" "}
                 </p>
+                <div className="terms-links">
+                    <p>Quick Links:</p>
+
+                    <ul>
+                        <li><Link to="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/shipping" className="terms-link">Shipping </Link></li>
+                        <li><Link to="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/terms" className="terms-link">Terms </Link></li>
+                        <li><Link to="https://merchant.razorpay.com/policy/RSvpT1xZQuuWuu/refund" className="terms-link">Cancellation </Link></li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
