@@ -64,6 +64,19 @@ div:focus {
   cursor: pointer;
 }
 
+.contact-button {
+  background-color: #f2c300;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.whatsapp-button {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
