@@ -56,7 +56,7 @@ const Home = () => {
     <div className="page-container">
       <div className="svg-icon-container-home">
         <img
-          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_300,h_80/v1738178375/heelourbhu4c0t3ijrch.png"
+          src="https://res.cloudinary.com/dmj6ur8sm/image/upload/f_auto,q_auto,w_200/v1772536725/iovy3zj9aj2of1cujtlv.png"
           alt="Icon"
         />
       </div>
@@ -77,7 +77,7 @@ const Home = () => {
           style={{ opacity: hoverBackgroundImage ? 0 : 1 }}
         >
           <source
-            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1744056248/l0fjilghhypu0qrlymoc.mp4"
+            src="https://res.cloudinary.com/dmj6ur8sm/video/upload/v1772533108/zzhai97kc5ht3uqxajla.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -87,15 +87,22 @@ const Home = () => {
           <motion.p
             style={{
               fontSize: "2rem",
-              textTransform: "uppercase",
               fontStyle: "none",
             }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span style={{ fontSize: "3rem" }}>Two Divisions,</span> One
-            Promise: Perfection
+            <span className="overlay-text">T
+            </span>
+            <span>
+              WO DIVISION,
+              ONE
+              PROMISE:{"      "}
+            </span>
+            <span className="overlay-text">
+              Perfection
+            </span>
           </motion.p>
 
           <div className="button-container">
@@ -106,9 +113,10 @@ const Home = () => {
               onMouseEnter={() => handleMouseEnter(weddingImage)}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="span-subtitle">DISCOVER</span>
-              WEDDINGS BY
-              <span>FOURTH MUNKY</span>
+              <span className="overlay-text-sub">Discover</span>
+              <span className="overlay-text-sub2">
+                WEDDINGS
+              </span>
             </Link>
 
             <Link
@@ -118,9 +126,9 @@ const Home = () => {
               onMouseEnter={() => handleMouseEnter(entertainmentImage)}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="span-subtitle">EXPLORE</span>
-              FOURTH MUNKY
-              <span>ENTERTAINMENT</span>
+              <span className="overlay-text-sub">Explore</span>
+
+              <span className="overlay-text-sub2">ENTERTAINMENT</span>
             </Link>
           </div>
         </div>
